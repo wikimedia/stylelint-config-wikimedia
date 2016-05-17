@@ -32,7 +32,7 @@ module.exports = {
 		"function-whitespace-after": [ "always" ],
 
 		"value-list-comma-newline-after": [ "never-multi-line" ],
-		"value-list-comma-newline-before": [ "always-multi-line" ],
+		"value-list-comma-newline-before": [ "never-multi-line" ],
 		"value-list-comma-space-after": [ "always-single-line" ],
 		"value-list-comma-space-before": [ "never" ],
 
