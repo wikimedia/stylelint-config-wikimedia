@@ -1,4 +1,5 @@
 # stylelint-config-wikimedia
+[![NPM version](http://img.shields.io/npm/v/stylelint-config-wikimedia.svg)](https://www.npmjs.org/package/stylelint-config-wikimedia)
 > Wikimedia CSS Coding Standards shareable config for stylelint
 
 Configuration rules to ensure your CSS is compliant with the [Wikimedia CSS Coding Standards](https://www.mediawiki.org/wiki/Manual:Coding_conventions/CSS).
