@@ -31,6 +31,10 @@ module.exports = {
 		"function-url-quotes": [ "none" ],
 		"function-whitespace-after": [ "always" ],
 
+		"number-leading-zero": [ "always" ],
+		"number-no-trailing-zeros": true,
+		"number-zero-length-no-unit": true,
+
 		"value-list-comma-newline-after": [ "never-multi-line" ],
 		"value-list-comma-newline-before": [ "never-multi-line" ],
 		"value-list-comma-space-after": [ "always-single-line" ],
