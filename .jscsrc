@@ -1,0 +1,7 @@
+{
+	"preset": "wikimedia",
+
+	"disallowQuotedKeysInObjects": false,
+	"disallowTrailingComma": false,
+	"validateQuoteMarks": false
+}
