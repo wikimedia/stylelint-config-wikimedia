@@ -28,9 +28,9 @@
     "stylelint-value-border-zero": "1.0.2"
   },
   "devDependencies": {
-    "stylelint": "6.3.3"
+    "stylelint": "6.5.1"
   },
   "peerDependencies": {
-    "stylelint": "6.3.3"
+    "stylelint": "6.5.1"
   }
 }
