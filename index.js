@@ -1,7 +1,4 @@
 module.exports = {
-	"plugins": [
-		"stylelint-value-border-zero"
-	],
 	"rules": {
 
 		"indentation": [ "tab" ],
@@ -104,8 +101,8 @@ module.exports = {
 		"at-rule-name-case": "lower",
 		"at-rule-name-space-after": "always-single-line",
 
-		"value-border-zero": {
-			"convention": "0"
+		"property-value-blacklist": {
+			"/^border/": [ "none" ]
 		}
 	}
 }

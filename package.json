@@ -24,9 +24,6 @@
     "LICENSE",
     "index.js"
   ],
-  "dependencies": {
-    "stylelint-value-border-zero": "1.0.2"
-  },
   "devDependencies": {
     "stylelint": "6.5.1"
   },
