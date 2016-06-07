@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.2 / 2016-06-07
+* build: Replace two deprecated rule values with equivalents (James D. Forrester)
+* build: Replace `stylelint-value-border-zero` plugin with a `property-value-blacklist` rule (James D. Forrester)
+
 ## 0.2.1 / 2016-06-07
 * build: Bump stylelint dependency from 6.3.3 to 6.5.1 (James D. Forrester)
 
