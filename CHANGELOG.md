@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.2.1 / 2016-06-07
+* build: Bump stylelint dependency from 6.3.3 to 6.5.1 (James D. Forrester)
+
 ## 0.2.0 / 2016-05-23
 * New rule: `number-leading-zero`, configured as 'always' (James D. Forrester)
 * New rule: `number-no-trailing-zeros`, configured as 'true' (James D. Forrester)
