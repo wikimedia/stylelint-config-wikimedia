@@ -21,7 +21,7 @@ module.exports = {
 		"color-named": [ "never" ],
 		"color-no-invalid-hex": true,
 
-		"font-family-name-quotes": [ "single-unless-keyword" ],
+		"font-family-name-quotes": [ "always-unless-keyword" ],
 		"font-weight-notation": [ "named-where-possible" ],
 
 		"function-calc-no-unspaced-operator": true,
@@ -31,7 +31,7 @@ module.exports = {
 		"function-comma-space-before": [ "never" ],
 		"function-parentheses-newline-inside": [ "never-multi-line" ],
 		"function-parentheses-space-inside": [ "always" ],
-		"function-url-quotes": [ "none" ],
+		"function-url-quotes": [ "never" ],
 		"function-whitespace-after": [ "always" ],
 
 		"number-leading-zero": [ "always" ],
