@@ -10,6 +10,7 @@ module.exports = {
 		"no-descending-specificity": true,
 		"declaration-no-important": true,
 		"selector-no-id": true,
+		"selector-attribute-quotes": "always",
 
 		"no-unknown-animations": true,
 
