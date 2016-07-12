@@ -33,7 +33,8 @@ module.exports = {
 
 		"number-leading-zero": [ "always" ],
 		"number-no-trailing-zeros": true,
-		"number-zero-length-no-unit": true,
+
+		"length-zero-no-unit": true,
 
 		"value-list-comma-newline-after": [ "never-multi-line" ],
 		"value-list-comma-newline-before": [ "never-multi-line" ],
