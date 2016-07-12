@@ -25,9 +25,9 @@
     "index.js"
   ],
   "devDependencies": {
-    "stylelint": "^6.5.1"
+    "stylelint": "^6.6.0"
   },
   "peerDependencies": {
-    "stylelint": "^6.5.1"
+    "stylelint": "^6.6.0"
   }
 }
