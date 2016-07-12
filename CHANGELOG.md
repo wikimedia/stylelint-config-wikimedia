@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.2.3 / 2016-07-12
+* New rule: `at-rule-no-unknown`, configured as 'true' (James D. Forrester)
+* New rule: `selector-attribute-quotes`, configured as 'always' (James D. Forrester)
+* Change rule: `Replace number-zero-length-no-unit` with `length-zero-no-unit` (James D. Forrester)
+* Change rule: Replace `property-value-blacklist` with `declaration-property-value-blacklist` (James D. Forrester)
+* build: Bump stylelint dependency from 6.5.1 to ^6.9.0 (James D. Forrester)
+
 ## 0.2.2 / 2016-06-07
 * build: Replace two deprecated rule values with equivalents (James D. Forrester)
 * build: Replace `stylelint-value-border-zero` plugin with a `property-value-blacklist` rule (James D. Forrester)
