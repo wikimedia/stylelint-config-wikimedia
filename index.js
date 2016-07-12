@@ -101,6 +101,7 @@ module.exports = {
 
 		"at-rule-name-case": "lower",
 		"at-rule-name-space-after": "always-single-line",
+		"at-rule-no-unknown": true,
 
 		"declaration-property-value-blacklist": {
 			"/^border/": [ "none" ]
