@@ -4,7 +4,7 @@ module.exports = {
 		"indentation": [ "tab" ],
 		"max-empty-lines": 1,
 		"no-eol-whitespace": true,
-		"no-missing-eof-newline": true,
+		"no-missing-end-of-source-newline": true,
 
 		"no-duplicate-selectors": true,
 		"no-descending-specificity": true,
@@ -87,8 +87,7 @@ module.exports = {
 		"media-feature-no-missing-punctuation": true,
 		"media-feature-range-operator-space-after": [ "always" ],
 		"media-feature-range-operator-space-before": [ "always" ],
-
-		"media-query-parentheses-space-inside": [ "always" ],
+		"media-feature-parentheses-space-inside": [ "always" ],
 
 		"media-query-list-comma-newline-after": [ "always-multi-line" ],
 		"media-query-list-comma-newline-before": [ "never-multi-line" ],
@@ -108,4 +107,4 @@ module.exports = {
 			"/^border/": [ "none" ]
 		}
 	}
-}
+};
