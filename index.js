@@ -29,7 +29,9 @@ module.exports = {
 		"function-comma-space-before": [ "never" ],
 		"function-parentheses-newline-inside": [ "never-multi-line" ],
 		"function-parentheses-space-inside": [ "always" ],
+		"function-url-no-scheme-relative": true,
 		"function-url-quotes": [ "never" ],
+		"function-url-scheme-whitelist": ["https", "data"],
 		"function-whitespace-after": [ "always" ],
 
 		"number-leading-zero": [ "always" ],
@@ -51,6 +53,7 @@ module.exports = {
 		"string-quotes": [ "single" ],
 
 		"declaration-block-no-duplicate-properties": [ true, { ignore: [ "consecutive-duplicates" ] } ],
+		"declaration-block-no-redundant-longhand-properties": true,
 		"declaration-block-no-shorthand-property-overrides": true,
 
 		"declaration-block-semicolon-newline-after": [ "always" ],
@@ -69,9 +72,14 @@ module.exports = {
 		"block-opening-brace-newline-after": [ "always-multi-line" ],
 		"block-opening-brace-space-after": [ "always-single-line" ],
 		"block-opening-brace-space-before": [ "always" ],
+		
+		"comment-no-empty": true,
+		
+		"custom-property-no-outside-root": true,
 
 		"selector-combinator-space-after": [ "always" ],
 		"selector-combinator-space-before": [ "always" ],
+		"selector-descendant-combinator-no-non-space": true,
 		"selector-no-vendor-prefix": true,
 		"selector-root-no-composition": true,
 		"selector-pseudo-element-colon-notation": [ "single" ],
@@ -80,10 +88,14 @@ module.exports = {
 		"selector-list-comma-newline-before": [ "never-multi-line" ],
 		"selector-list-comma-space-after": [ "always-single-line" ],
 		"selector-list-comma-space-before": [ "never" ],
+		
+		"shorthand-property-no-redundant-values": true,
 
 		"media-feature-colon-space-after": [ "always" ],
 		"media-feature-colon-space-before": [ "never" ],
+		"media-feature-name-case": [ "lower" ],
 		"media-feature-name-no-vendor-prefix": true,
+		"media-feature-name-no-unknown": true,
 		"media-feature-no-missing-punctuation": true,
 		"media-feature-range-operator-space-after": [ "always" ],
 		"media-feature-range-operator-space-before": [ "always" ],
