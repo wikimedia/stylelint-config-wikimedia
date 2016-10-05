@@ -51,6 +51,8 @@ module.exports = {
 
 		"string-no-newline": true,
 		"string-quotes": [ "single" ],
+		
+		"declaration-block-properties-order": [ "content", "background-image", "background-origin", "background-position", "background-repeat", "background-size", "color", "list-style", "filter", "opacity", "display", "clip", "overflow", "visibility", "float", "clear", "position", "top", "left", "bottom", "right", "z-index", "box-sizing", "min-width", "max-width", "width", "height", "outline", "margin", "padding", "border", "border-radius", "box-shadow", "direction", "hyphens", "font-family", "font-size", "font-weight", "line-height", "text-align", "text-decoration", "text-overflow", "text-shadow", "text-transform", "vertical-align", "white-space", "cursor", "zoom", "animation", "transition" ],
 
 		"declaration-block-no-duplicate-properties": [ true, { ignore: [ "consecutive-duplicates" ] } ],
 		"declaration-block-no-redundant-longhand-properties": true,
