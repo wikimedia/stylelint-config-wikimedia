@@ -116,7 +116,8 @@ module.exports = {
 		"at-rule-no-unknown": true,
 
 		"declaration-property-value-blacklist": {
-			"/^border/": [ "none" ]
+			"/^border/": [ "none" ],
+			"/^outline/": [ "none" ]
 		}
 	}
 };
