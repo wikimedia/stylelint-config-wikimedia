@@ -12,6 +12,46 @@ module.exports = {
 		"selector-no-id": true,
 		"selector-attribute-quotes": "always",
 
+		"no-browser-hacks": [ true, {
+			"browsers": [
+				">0.1%",
+				"last 2 Chrome versions",
+				"last 2 ChromeAndroid versions",
+				"Explorer >= 6",
+				"ExplorerMobile >= 6",
+				"Edge >= 12",
+				"Firefox >= 3",
+				"FirefoxAndroid >= 3",
+				"Safari >= 3",
+				"Opera >= 10",
+				"OperaMobile >= 10",
+				"iOS >= 6.1",
+				"Android >= 2.3",
+				"not BlackBerry >= 1",
+				"not OperaMini >= 1",
+			]
+		} ],
+
+		"no-unsupported-browser-features": [ true, {
+			"browsers": [
+				">5%",
+				"last 2 Chrome versions",
+				"last 2 ChromeAndroid versions",
+				"Explorer >= 9",
+				"ExplorerMobile >= 9",
+				"Edge >= 12",
+				"last 2 Firefox versions",
+				"last 2 FirefoxAndroid versions",
+				"Safari >= 5.1",
+				"Opera >= 12.1",
+				"OperaMobile >= 12",
+				"iOS >= 6.1",
+				"Android >= 2.3",
+				"not BlackBerry >= 1",
+				"not OperaMini >= 1",
+			]
+		} ],
+
 		"no-unknown-animations": true,
 
 		"color-hex-case": [ "lower" ],
