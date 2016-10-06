@@ -52,6 +52,11 @@ module.exports = {
 		"declaration-colon-space-after": [ "always" ],
 		"declaration-colon-space-before": [ "never" ],
 		"declaration-no-important": true,
+		
+		"declaration-property-value-blacklist": {
+			"/^border/": [ "none" ],
+			"/^outline/": [ "none" ]
+		}
 
 		"font-family-name-quotes": [ "always-unless-keyword" ],
 		"font-weight-notation": [ "named-where-possible" ],
@@ -116,11 +121,6 @@ module.exports = {
 		"value-list-comma-newline-after": [ "never-multi-line" ],
 		"value-list-comma-newline-before": [ "never-multi-line" ],
 		"value-list-comma-space-after": [ "always-single-line" ],
-		"value-list-comma-space-before": [ "never" ],
-
-		"declaration-property-value-blacklist": {
-			"/^border/": [ "none" ],
-			"/^outline/": [ "none" ]
-		}
+		"value-list-comma-space-before": [ "never" ]
 	}
 };
