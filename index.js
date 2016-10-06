@@ -1,23 +1,57 @@
 module.exports = {
 	"rules": {
-
+		// Wikimedia Foundation ♡ whitespace in its own special way
+		// See also https://www.mediawiki.org/wiki/Manual:Coding_conventions/CSS#Whitespace
 		"indentation": [ "tab" ],
 		"max-empty-lines": 1,
 		"no-eol-whitespace": true,
 		"no-missing-end-of-source-newline": true,
 
-		"no-duplicate-selectors": true,
-		"no-descending-specificity": true,
-		"declaration-no-important": true,
-		"selector-no-id": true,
-		"selector-attribute-quotes": "always",
+		// Other rules alphabetically
+		"at-rule-empty-line-before": [ "always", {
+			except: [ "blockless-group", "first-nested" ],
+			ignore: [ "after-comment" ],
+		} ],
+		"at-rule-name-case": "lower",
+		"at-rule-name-space-after": "always-single-line",
+		"at-rule-no-unknown": true,
 
-		"no-unknown-animations": true,
+		"block-closing-brace-newline-after": [ "always" ],
+		"block-closing-brace-newline-before": [ "always-multi-line" ],
+		"block-closing-brace-space-after": [ "always-single-line" ],
+		"block-closing-brace-space-before": [ "always-single-line" ],
+		"block-no-empty": true,
+		"block-no-single-line": true,
+		"block-opening-brace-newline-after": [ "always-multi-line" ],
+		"block-opening-brace-space-after": [ "always-single-line" ],
+		"block-opening-brace-space-before": [ "always" ],
 
 		"color-hex-case": [ "lower" ],
 		"color-hex-length": [ "short" ],
 		"color-named": [ "never" ],
 		"color-no-invalid-hex": true,
+
+		"comment-no-empty": true,
+
+		"custom-property-no-outside-root": true,
+
+		"declaration-bang-space-after": [ "never" ],
+		"declaration-bang-space-before": [ "always" ],
+
+		"declaration-block-no-duplicate-properties": [ true, { ignore: [ "consecutive-duplicates" ] } ],
+		"declaration-block-no-redundant-longhand-properties": true,
+		"declaration-block-no-shorthand-property-overrides": true,
+
+		"declaration-block-semicolon-newline-after": [ "always" ],
+		"declaration-block-semicolon-newline-before": [ "never-multi-line" ],
+		"declaration-block-semicolon-space-after": [ "always-single-line" ],
+		"declaration-block-semicolon-space-before": [ "never" ],
+		"declaration-block-single-line-max-declarations": 1,
+		"declaration-block-trailing-semicolon": [ "always" ],
+
+		"declaration-colon-space-after": [ "always" ],
+		"declaration-colon-space-before": [ "never" ],
+		"declaration-no-important": true,
 
 		"font-family-name-quotes": [ "always-unless-keyword" ],
 		"font-weight-notation": [ "named-where-possible" ],
@@ -34,62 +68,7 @@ module.exports = {
 		"function-url-scheme-whitelist": ["https", "data"],
 		"function-whitespace-after": [ "always" ],
 
-		"number-leading-zero": [ "always" ],
-		"number-no-trailing-zeros": true,
-
 		"length-zero-no-unit": true,
-
-		"value-list-comma-newline-after": [ "never-multi-line" ],
-		"value-list-comma-newline-before": [ "never-multi-line" ],
-		"value-list-comma-space-after": [ "always-single-line" ],
-		"value-list-comma-space-before": [ "never" ],
-
-		"declaration-bang-space-after": [ "never" ],
-		"declaration-bang-space-before": [ "always" ],
-		"declaration-colon-space-after": [ "always" ],
-		"declaration-colon-space-before": [ "never" ],
-
-		"string-no-newline": true,
-		"string-quotes": [ "single" ],
-
-		"declaration-block-no-duplicate-properties": [ true, { ignore: [ "consecutive-duplicates" ] } ],
-		"declaration-block-no-redundant-longhand-properties": true,
-		"declaration-block-no-shorthand-property-overrides": true,
-
-		"declaration-block-semicolon-newline-after": [ "always" ],
-		"declaration-block-semicolon-newline-before": [ "never-multi-line" ],
-		"declaration-block-semicolon-space-after": [ "always-single-line" ],
-		"declaration-block-semicolon-space-before": [ "never" ],
-		"declaration-block-single-line-max-declarations": 1,
-		"declaration-block-trailing-semicolon": [ "always" ],
-
-		"block-closing-brace-newline-after": [ "always" ],
-		"block-closing-brace-newline-before": [ "always-multi-line" ],
-		"block-closing-brace-space-after": [ "always-single-line" ],
-		"block-closing-brace-space-before": [ "always-single-line" ],
-		"block-no-empty": true,
-		"block-no-single-line": true,
-		"block-opening-brace-newline-after": [ "always-multi-line" ],
-		"block-opening-brace-space-after": [ "always-single-line" ],
-		"block-opening-brace-space-before": [ "always" ],
-		
-		"comment-no-empty": true,
-		
-		"custom-property-no-outside-root": true,
-
-		"selector-combinator-space-after": [ "always" ],
-		"selector-combinator-space-before": [ "always" ],
-		"selector-descendant-combinator-no-non-space": true,
-		"selector-no-vendor-prefix": true,
-		"selector-root-no-composition": true,
-		"selector-pseudo-element-colon-notation": [ "single" ],
-
-		"selector-list-comma-newline-after": [ "always" ],
-		"selector-list-comma-newline-before": [ "never-multi-line" ],
-		"selector-list-comma-space-after": [ "always-single-line" ],
-		"selector-list-comma-space-before": [ "never" ],
-		
-		"shorthand-property-no-redundant-values": true,
 
 		"media-feature-colon-space-after": [ "always" ],
 		"media-feature-colon-space-before": [ "never" ],
@@ -106,14 +85,38 @@ module.exports = {
 		"media-query-list-comma-space-after": [ "always-single-line" ],
 		"media-query-list-comma-space-before": [ "never" ],
 
-		"at-rule-empty-line-before": [ "always", {
-			except: [ "blockless-group", "first-nested" ],
-			ignore: [ "after-comment" ],
-		} ],
+		"no-descending-specificity": true,
+		"no-duplicate-selectors": true,
+		"no-extra-semicolons": true,
+		"no-unknown-animations": true,
 
-		"at-rule-name-case": "lower",
-		"at-rule-name-space-after": "always-single-line",
-		"at-rule-no-unknown": true,
+		"number-leading-zero": [ "always" ],
+		"number-no-trailing-zeros": true,
+
+		"selector-attribute-quotes": "always",
+		"selector-combinator-space-after": [ "always" ],
+		"selector-combinator-space-before": [ "always" ],
+		"selector-descendant-combinator-no-non-space": true,
+
+		"selector-list-comma-newline-after": [ "always" ],
+		"selector-list-comma-newline-before": [ "never-multi-line" ],
+		"selector-list-comma-space-after": [ "always-single-line" ],
+		"selector-list-comma-space-before": [ "never" ],
+
+		"selector-no-id": true,
+		"selector-no-vendor-prefix": true,
+		"selector-pseudo-element-colon-notation": [ "single" ],
+		"selector-root-no-composition": true,
+		
+		"shorthand-property-no-redundant-values": true,
+
+		"string-no-newline": true,
+		"string-quotes": [ "single" ],
+
+		"value-list-comma-newline-after": [ "never-multi-line" ],
+		"value-list-comma-newline-before": [ "never-multi-line" ],
+		"value-list-comma-space-after": [ "always-single-line" ],
+		"value-list-comma-space-before": [ "never" ],
 
 		"declaration-property-value-blacklist": {
 			"/^border/": [ "none" ],
