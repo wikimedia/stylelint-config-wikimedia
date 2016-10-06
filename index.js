@@ -56,7 +56,7 @@ module.exports = {
 		"declaration-property-value-blacklist": {
 			"/^border/": [ "none" ],
 			"/^outline/": [ "none" ]
-		}
+		},
 
 		"font-family-name-quotes": [ "always-unless-keyword" ],
 		"font-weight-notation": [ "named-where-possible" ],
