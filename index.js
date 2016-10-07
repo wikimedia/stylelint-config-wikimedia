@@ -15,6 +15,7 @@ module.exports = {
 		"at-rule-name-case": "lower",
 		"at-rule-name-space-after": "always-single-line",
 		"at-rule-no-unknown": true,
+		"at-rule-semicolon-newline-after": true,
 
 		"block-closing-brace-newline-after": [ "always" ],
 		"block-closing-brace-newline-before": [ "always-multi-line" ],
@@ -66,6 +67,9 @@ module.exports = {
 		"function-comma-newline-before": "never-multi-line",
 		"function-comma-space-after": [ "always" ],
 		"function-comma-space-before": [ "never" ],
+		"function-linear-gradient-no-nonstandard-direction": true,
+		"function-max-empty-lines": 0,
+		"function-name-case": [ "lower" ],
 		"function-parentheses-newline-inside": [ "never-multi-line" ],
 		"function-parentheses-space-inside": [ "always" ],
 		"function-url-no-scheme-relative": true,
@@ -78,8 +82,8 @@ module.exports = {
 		"media-feature-colon-space-after": [ "always" ],
 		"media-feature-colon-space-before": [ "never" ],
 		"media-feature-name-case": [ "lower" ],
-		"media-feature-name-no-vendor-prefix": true,
 		"media-feature-name-no-unknown": true,
+		"media-feature-name-no-vendor-prefix": null,
 		"media-feature-no-missing-punctuation": true,
 		"media-feature-range-operator-space-after": [ "always" ],
 		"media-feature-range-operator-space-before": [ "always" ],
@@ -92,12 +96,21 @@ module.exports = {
 
 		"no-descending-specificity": true,
 		"no-duplicate-selectors": true,
+		"no-invalid-double-slash-comments": true,
 		"no-extra-semicolons": true,
 		"no-unknown-animations": true,
 
 		"number-leading-zero": [ "always" ],
 		"number-no-trailing-zeros": true,
+		
+		"property-case": [ "lower" ],
+		"property-no-unknown": true,
+		
+		"root-no-standard-properties": true,
 
+		"selector-attribute-brackets-space-inside": [ "never" ],
+		"selector-attribute-operator-space-after": [ "never" ],
+		"selector-attribute-operator-space-before": [ "never" ],
 		"selector-attribute-quotes": "always",
 		"selector-combinator-space-after": [ "always" ],
 		"selector-combinator-space-before": [ "always" ],
@@ -110,13 +123,27 @@ module.exports = {
 
 		"selector-no-id": true,
 		"selector-no-vendor-prefix": true,
+		"selector-pseudo-class-case": [ "lower" ],
+		"selector-pseudo-class-no-unknown": true,
+		"selector-pseudo-class-parentheses-space-inside": [ "always" ],
+		"selector-pseudo-element-case": [ "lower" ],
 		"selector-pseudo-element-colon-notation": [ "single" ],
 		"selector-root-no-composition": true,
+		"selector-type-case": [ "lower" ],
+		"selector-type-no-unknown": true,
 		
 		"shorthand-property-no-redundant-values": true,
 
 		"string-no-newline": true,
 		"string-quotes": [ "single" ],
+		
+		"time-no-imperceptible": true,
+		
+		"unit-case": [ "lower" ],
+		"unit-no-unknown": true,
+		
+		"value-keyword-case": [ "lower" ],
+		"value-list-max-empty-lines": 0,
 
 		"value-list-comma-newline-after": [ "never-multi-line" ],
 		"value-list-comma-newline-before": [ "never-multi-line" ],
