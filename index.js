@@ -53,7 +53,7 @@ module.exports = {
 		"declaration-colon-space-after": [ "always" ],
 		"declaration-colon-space-before": [ "never" ],
 		"declaration-no-important": true,
-		
+
 		"declaration-property-value-blacklist": {
 			"/^border/": [ "none" ],
 			"/^outline/": [ "none" ]
@@ -102,10 +102,10 @@ module.exports = {
 
 		"number-leading-zero": [ "always" ],
 		"number-no-trailing-zeros": true,
-		
+
 		"property-case": [ "lower" ],
 		"property-no-unknown": true,
-		
+
 		"root-no-standard-properties": true,
 
 		"selector-attribute-brackets-space-inside": [ "never" ],
@@ -131,17 +131,19 @@ module.exports = {
 		"selector-root-no-composition": true,
 		"selector-type-case": [ "lower" ],
 		"selector-type-no-unknown": true,
-		
+		"selector-pseudo-element-colon-notation": [ "single" ],
+		"selector-root-no-composition": true,
+
 		"shorthand-property-no-redundant-values": true,
 
 		"string-no-newline": true,
 		"string-quotes": [ "single" ],
-		
+
 		"time-no-imperceptible": true,
-		
+
 		"unit-case": [ "lower" ],
 		"unit-no-unknown": true,
-		
+
 		"value-keyword-case": [ "lower" ],
 		"value-list-max-empty-lines": 0,
 
