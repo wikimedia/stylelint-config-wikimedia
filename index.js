@@ -39,7 +39,9 @@ module.exports = {
 		"declaration-bang-space-after": [ "never" ],
 		"declaration-bang-space-before": [ "always" ],
 
-		"declaration-block-no-duplicate-properties": [ true, { ignore: [ "consecutive-duplicates" ] } ],
+		"declaration-block-no-duplicate-properties": [ true, {
+			ignore: [ "consecutive-duplicates" ]
+		} ],
 		"declaration-block-no-redundant-longhand-properties": true,
 		"declaration-block-no-shorthand-property-overrides": true,
 
@@ -69,7 +71,9 @@ module.exports = {
 		"function-comma-space-before": [ "never" ],
 		"function-linear-gradient-no-nonstandard-direction": true,
 		"function-max-empty-lines": 0,
-		"function-name-case": [ "lower" ],
+		"function-name-case": [ "lower", {
+			ignoreFunctions: [ "/^DXImageTransform.Microsoft.*$/" ]
+		} ],
 		"function-parentheses-newline-inside": [ "never-multi-line" ],
 		"function-parentheses-space-inside": [ "always" ],
 		"function-url-no-scheme-relative": true,
