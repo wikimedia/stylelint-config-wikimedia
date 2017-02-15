@@ -134,8 +134,6 @@ module.exports = {
 		"selector-pseudo-element-colon-notation": [ "single" ],
 		"selector-root-no-composition": true,
 
-		"shorthand-property-no-redundant-values": true,
-
 		"string-no-newline": true,
 		"string-quotes": [ "single" ],
 
