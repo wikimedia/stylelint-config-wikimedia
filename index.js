@@ -128,11 +128,9 @@ module.exports = {
 		"selector-pseudo-class-parentheses-space-inside": [ "always" ],
 		"selector-pseudo-element-case": [ "lower" ],
 		"selector-pseudo-element-colon-notation": [ "single" ],
-		"selector-root-no-composition": true,
 		"selector-type-case": [ "lower" ],
 		"selector-type-no-unknown": true,
 		"selector-pseudo-element-colon-notation": [ "single" ],
-		"selector-root-no-composition": true,
 
 		"shorthand-property-no-redundant-values": true,
 
