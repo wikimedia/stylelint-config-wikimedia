@@ -9,7 +9,7 @@ module.exports = {
 
 		// Other rules alphabetically
 		"at-rule-empty-line-before": [ "always", {
-			except: [ "blockless-group", "first-nested" ],
+			except: [ "blockless-after-blockless", "first-nested" ],
 			ignore: [ "after-comment" ],
 		} ],
 		"at-rule-name-case": "lower",
