@@ -130,7 +130,6 @@ module.exports = {
 		"selector-pseudo-element-colon-notation": [ "single" ],
 		"selector-type-case": [ "lower" ],
 		"selector-type-no-unknown": true,
-		"selector-pseudo-element-colon-notation": [ "single" ],
 
 		"shorthand-property-no-redundant-values": true,
 
