@@ -134,7 +134,7 @@ module.exports = {
 		"string-no-newline": true,
 		"string-quotes": [ "single" ],
 
-		"time-no-imperceptible": true,
+		"time-min-milliseconds": 100,
 
 		"unit-case": [ "lower" ],
 		"unit-no-unknown": true,
