@@ -5,6 +5,7 @@
 * Remove rule: `function-url-scheme-whitelist` is broken (James D. Forrester)
 * Remove rule: `root-no-standard-properties` is deprecated (James D. Forrester)
 * Replace rule: `time-no-imperceptible` to `time-min-milliseconds` (James D. Forrester)
+* Change rule: `block-opening-brace-newline-before` from `always` to `never-multi-line` (James D. Forrester)
 
 ## 0.4.0 / 2017-02-17
 * New rule: `at-rule-semicolon-newline-after`, configured as 'always' (Volker E)
