@@ -135,8 +135,6 @@ module.exports = {
 		"selector-type-case": [ "lower" ],
 		"selector-type-no-unknown": true,
 
-		"shorthand-property-no-redundant-values": true,
-
 		"string-no-newline": true,
 		"string-quotes": [ "single" ],
 
