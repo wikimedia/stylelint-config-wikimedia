@@ -5,9 +5,7 @@
 * Remove rule: `function-url-scheme-whitelist` is broken (James D. Forrester)
 * Remove rule: `root-no-standard-properties` is deprecated (James D. Forrester)
 * Replace rule: `time-no-imperceptible` to `time-min-milliseconds` (James D. Forrester)
-* Change rule: `block-closing-brace-newline-before` from `always-multi-line` to `never-single-line` (James D. Forrester)
-* Change rule: `block-closing-brace-space-before` from `always-single-line` to `always` (James D. Forrester)
-* Change rule: `block-opening-brace-newline-before` from `always` to `always-multi-line` (James D. Forrester)
+* Change rule: `block-opening-brace-newline-before` from `always` to `always-single-line` (James D. Forrester)
 * Change rule: `block-opening-brace-space-before` from `always` to `always-single-line` (James D. Forrester)
 
 ## 0.4.0 / 2017-02-17
