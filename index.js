@@ -35,8 +35,6 @@ module.exports = {
 
 		"comment-no-empty": true,
 
-		"custom-property-no-outside-root": true,
-
 		"declaration-bang-space-after": [ "never" ],
 		"declaration-bang-space-before": [ "always" ],
 
