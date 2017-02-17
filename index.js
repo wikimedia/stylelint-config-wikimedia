@@ -35,8 +35,6 @@ module.exports = {
 
 		"comment-no-empty": true,
 
-		"custom-property-no-outside-root": true,
-
 		"declaration-bang-space-after": [ "never" ],
 		"declaration-bang-space-before": [ "always" ],
 
@@ -110,8 +108,6 @@ module.exports = {
 		"property-case": [ "lower" ],
 		"property-no-unknown": true,
 
-		"root-no-standard-properties": true,
-
 		"selector-attribute-brackets-space-inside": [ "never" ],
 		"selector-attribute-operator-space-after": [ "never" ],
 		"selector-attribute-operator-space-before": [ "never" ],
@@ -138,7 +134,7 @@ module.exports = {
 		"string-no-newline": true,
 		"string-quotes": [ "single" ],
 
-		"time-no-imperceptible": true,
+		"time-min-milliseconds": 100,
 
 		"unit-case": [ "lower" ],
 		"unit-no-unknown": true,
