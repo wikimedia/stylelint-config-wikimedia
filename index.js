@@ -21,12 +21,13 @@ module.exports = {
 		"block-closing-brace-newline-before": [ "always-multi-line" ],
 		"block-closing-brace-space-after": [ "always-single-line" ],
 		"block-closing-brace-space-before": [ "always-single-line" ],
+
 		"block-no-empty": true,
 
 		"block-opening-brace-newline-after": [ "always" ],
-		"block-opening-brace-newline-before": [ "always" ],
+		"block-opening-brace-newline-before": [ "always-single-line" ],
 		"block-opening-brace-space-after": [ "always-single-line" ],
-		"block-opening-brace-space-before": [ "always" ],
+		"block-opening-brace-space-before": [ "always-single-line" ],
 
 		"color-hex-case": [ "lower" ],
 		"color-hex-length": [ "short" ],
@@ -77,7 +78,6 @@ module.exports = {
 		"function-parentheses-space-inside": [ "always" ],
 		"function-url-no-scheme-relative": true,
 		"function-url-quotes": [ "never" ],
-		"function-url-scheme-whitelist": ["https", "data"],
 		"function-whitespace-after": [ "always" ],
 
 		"length-zero-no-unit": true,
