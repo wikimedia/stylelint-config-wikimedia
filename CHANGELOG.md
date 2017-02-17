@@ -26,7 +26,6 @@
 * New rule: `selector-pseudo-element-case`, configured as 'lower' (Volker E)
 * New rule: `selector-type-case`, configured as 'lower' (Volker E)
 * New rule: `selector-type-no-unknown`, configured as 'true' (Volker E)
-* New rule: `shorthand-property-no-redundant-values`, configured as 'true' (Volker E)
 * New rule: `time-no-imperceptible`, configured as 'true' (Volker E)
 * New rule: `unit-case`, configured as 'lower' (Volker E)
 * New rule: `unit-no-unknown`, configured as 'true' (Volker E)
