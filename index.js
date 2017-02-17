@@ -77,7 +77,6 @@ module.exports = {
 		"function-parentheses-space-inside": [ "always" ],
 		"function-url-no-scheme-relative": true,
 		"function-url-quotes": [ "never" ],
-		"function-url-scheme-whitelist": ["https", "data"],
 		"function-whitespace-after": [ "always" ],
 
 		"length-zero-no-unit": true,
