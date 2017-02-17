@@ -17,16 +17,17 @@ module.exports = {
 		"at-rule-no-unknown": true,
 		"at-rule-semicolon-newline-after": [ "always" ],
 
-                "block-closing-brace-newline-after": [ "always" ],
-                "block-closing-brace-newline-before": [ "always-multi-line" ],
-                "block-closing-brace-space-after": [ "always-single-line" ],
-                "block-closing-brace-space-before": [ "always-single-line" ],
-                "block-no-empty": true,
+		"block-closing-brace-newline-after": [ "always" ],
+		"block-closing-brace-newline-before": [ "always-multi-line" ],
+		"block-closing-brace-space-after": [ "always-single-line" ],
+		"block-closing-brace-space-before": [ "always-single-line" ],
 
-                "block-opening-brace-newline-after": [ "always" ],
+		"block-no-empty": true,
+
+		"block-opening-brace-newline-after": [ "always" ],
 		"block-opening-brace-newline-before": [ "always-single-line" ],
-                "block-opening-brace-space-after": [ "always-single-line" ],
-                "block-opening-brace-space-before": [ "always-single-line" ],
+		"block-opening-brace-space-after": [ "always-single-line" ],
+		"block-opening-brace-space-before": [ "always-single-line" ],
 
 		"color-hex-case": [ "lower" ],
 		"color-hex-length": [ "short" ],
