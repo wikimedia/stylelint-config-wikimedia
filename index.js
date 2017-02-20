@@ -108,7 +108,7 @@ module.exports = {
 		"property-case": [ "lower" ],
 		"property-no-unknown": true,
 
-		"selector-attribute-brackets-space-inside": [ "never" ],
+		"selector-attribute-brackets-space-inside": [ "always" ],
 		"selector-attribute-operator-space-after": [ "never" ],
 		"selector-attribute-operator-space-before": [ "never" ],
 		"selector-attribute-quotes": "always",
