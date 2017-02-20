@@ -1,3 +1,6 @@
+/* Use JSON-style double quotes */
+/* eslint quotes: ["error", "double"] */
+/* eslint quote-props: ["error", "double"] */
 module.exports = {
 	"rules": {
 		// Wikimedia Foundation ♡ whitespace in its own special way

@@ -25,6 +25,7 @@
     "index.js"
   ],
   "devDependencies": {
+    "eslint-config-wikimedia": "0.3.0",
     "stylelint": "7.8.0"
   },
   "peerDependencies": {
