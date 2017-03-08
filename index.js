@@ -67,6 +67,7 @@ module.exports = {
 		"font-family-name-quotes": [ "always-unless-keyword" ],
 		"font-weight-notation": [ "named-where-possible" ],
 
+		"function-blacklist": [ "rgb" ],
 		"function-calc-no-unspaced-operator": true,
 		"function-comma-newline-after": "never-multi-line",
 		"function-comma-newline-before": "never-multi-line",
