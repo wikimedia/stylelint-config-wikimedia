@@ -1,3 +1,6 @@
+/* Use JSON-style double quotes */
+/* eslint quotes: ["error", "double"] */
+/* eslint quote-props: ["error", "always"] */
 module.exports = {
 	"rules": {
 		// Wikimedia Foundation ♡ whitespace in its own special way
@@ -9,8 +12,8 @@ module.exports = {
 
 		// Other rules alphabetically
 		"at-rule-empty-line-before": [ "always", {
-			except: [ "blockless-after-blockless", "first-nested" ],
-			ignore: [ "after-comment" ],
+			"except": [ "blockless-after-blockless", "first-nested" ],
+			"ignore": [ "after-comment" ]
 		} ],
 		"at-rule-name-case": "lower",
 		"at-rule-name-space-after": "always-single-line",
@@ -40,7 +43,7 @@ module.exports = {
 		"declaration-bang-space-before": [ "always" ],
 
 		"declaration-block-no-duplicate-properties": [ true, {
-			ignore: [ "consecutive-duplicates" ]
+			"ignore": [ "consecutive-duplicates" ]
 		} ],
 		"declaration-block-no-redundant-longhand-properties": true,
 		"declaration-block-no-shorthand-property-overrides": true,
@@ -73,7 +76,7 @@ module.exports = {
 		"function-linear-gradient-no-nonstandard-direction": true,
 		"function-max-empty-lines": 0,
 		"function-name-case": [ "lower", {
-			ignoreFunctions: [ "/^DXImageTransform.Microsoft.*$/" ]
+			"ignoreFunctions": [ "/^DXImageTransform.Microsoft.*$/" ]
 		} ],
 		"function-parentheses-newline-inside": [ "never-multi-line" ],
 		"function-parentheses-space-inside": [ "always" ],
