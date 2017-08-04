@@ -31,9 +31,9 @@
     "eslint-config-wikimedia": "0.4.0",
     "grunt": "1.0.1",
     "grunt-eslint": "20.0.0",
-    "stylelint": "7.8.0"
+    "stylelint": "7.12.0"
   },
   "peerDependencies": {
-    "stylelint": "7.8.0"
+    "stylelint": "7.12.0"
   }
 }
