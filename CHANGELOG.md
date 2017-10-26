@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.4.2 / 2017-10-26
+* New rule: `function-blacklist`, configured to prevent `rgb()` color notation (Volker E)
+* Changed rule: `selector-attribute-brackets-space-inside`, set to `always` not `never` (Ed Sanders)
+* build: Replace jscs with eslint (Ed Sanders)
+* build: Bump stylelint dependency from 7.8.0 to 7.12.0 (Ed Sanders)
+* build: Bump stylelint dependency from 7.12.0 to 8.2.0 (James D. Forrester)
+
 ## 0.4.1 / 2017-02-17
 * Remove rule: `custom-property-no-outside-root` is deprecated (James D. Forrester)
 * Remove rule: `function-url-scheme-whitelist` is broken (James D. Forrester)
