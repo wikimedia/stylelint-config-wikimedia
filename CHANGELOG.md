@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.4.3 / 2018-04-04
+* build: Bump stylelint dependency from 8.2.0 to 8.4.0 (ricordisamoa)
+* build: Bump stylelint dependency from 8.4.0 to 9.2.0 (James D. Forrester)
+
 ## 0.4.2 / 2017-10-26
 * New rule: `function-blacklist`, configured to prevent `rgb()` color notation (Volker E)
 * Changed rule: `selector-attribute-brackets-space-inside`, set to `always` not `never` (Ed Sanders)
