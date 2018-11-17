@@ -65,6 +65,7 @@ module.exports = {
 		},
 
 		"font-family-name-quotes": [ "always-unless-keyword" ],
+		"font-family-no-missing-generic-family-keyword": true,
 		"font-weight-notation": [ "named-where-possible" ],
 
 		"function-blacklist": [ "rgb" ],
