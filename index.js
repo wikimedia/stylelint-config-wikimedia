@@ -20,6 +20,7 @@ module.exports = {
 		"at-rule-no-unknown": true,
 		"at-rule-semicolon-newline-after": [ "always" ],
 
+		"block-closing-brace-empty-line-before": "never",
 		"block-closing-brace-newline-after": [ "always" ],
 		"block-closing-brace-newline-before": [ "always-multi-line" ],
 		"block-closing-brace-space-after": [ "always-single-line" ],
