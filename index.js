@@ -39,6 +39,7 @@ module.exports = {
 		"color-no-invalid-hex": true,
 
 		"comment-no-empty": true,
+		"comment-whitespace-inside": "always",
 
 		"declaration-bang-space-after": [ "never" ],
 		"declaration-bang-space-before": [ "always" ],
