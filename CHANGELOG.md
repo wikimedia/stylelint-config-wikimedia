@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.5.0 / 2018-11-28
+* Move stylelint to be a true dependency, not a peerDependency (James D. Forrester)
+* Bump stylelint dependency from 9.2.0 to 9.6.0 (James D. Forrester)
+* New rule: `block-closing-brace-empty-line-before`, set to `never` (Volker E)
+* New rule: `comment-whitespace-inside`, set to `always` (Volker E)
+* New rule: `declaration-empty-line-before`, set to `never` with exemptions (Volker E)
+* New rule: `font-family-no-missing-generic-family-keyword`, set to `true` (Volker E)
+* New rule: `linebreaks`, set to `unix` (James D. Forrester)
+* New rule: `rule-empty-line-before`, set to `always-multi-line` with exemptions (Volker E)
+* New rule: `selector-max-empty-lines`, set to `0` (Volker E)
+* Changed rule: `block-opening-brace-space-before`, from `always-single-line` to `always` (Volker E)
+* build: Bump all devDependencies to latest (James D. Forrester)
+* Travis: Modernise test targets, enable npm cacheing, move reports (James D. Forrester)
+
 ## 0.4.3 / 2018-04-04
 * build: Bump stylelint dependency from 8.2.0 to 8.4.0 (ricordisamoa)
 * build: Bump stylelint dependency from 8.4.0 to 9.2.0 (James D. Forrester)
