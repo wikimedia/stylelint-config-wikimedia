@@ -20,6 +20,7 @@ module.exports = {
 		"at-rule-no-unknown": true,
 		"at-rule-semicolon-newline-after": [ "always" ],
 
+		"block-closing-brace-empty-line-before": "never",
 		"block-closing-brace-newline-after": [ "always" ],
 		"block-closing-brace-newline-before": [ "always-multi-line" ],
 		"block-closing-brace-space-after": [ "always-single-line" ],
@@ -30,7 +31,7 @@ module.exports = {
 		"block-opening-brace-newline-after": [ "always" ],
 		"block-opening-brace-newline-before": [ "always-single-line" ],
 		"block-opening-brace-space-after": [ "always-single-line" ],
-		"block-opening-brace-space-before": [ "always-single-line" ],
+		"block-opening-brace-space-before": "always",
 
 		"color-hex-case": [ "lower" ],
 		"color-hex-length": [ "short" ],
@@ -38,6 +39,7 @@ module.exports = {
 		"color-no-invalid-hex": true,
 
 		"comment-no-empty": true,
+		"comment-whitespace-inside": "always",
 
 		"declaration-bang-space-after": [ "never" ],
 		"declaration-bang-space-before": [ "always" ],
