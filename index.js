@@ -88,6 +88,7 @@ module.exports = {
 		"function-whitespace-after": [ "always" ],
 
 		"length-zero-no-unit": true,
+		"linebreaks": "unix",
 
 		"media-feature-colon-space-after": [ "always" ],
 		"media-feature-colon-space-before": [ "never" ],
