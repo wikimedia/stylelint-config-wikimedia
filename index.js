@@ -59,11 +59,11 @@ module.exports = {
 
 		"declaration-colon-space-after": [ "always" ],
 		"declaration-colon-space-before": [ "never" ],
-		"declaration-empty-line-before": [  "never", {
-			ignore: [
+		"declaration-empty-line-before": [ "never", {
+			"ignore": [
 				"after-comment",
-				"inside-single-line-block",
-			],
+				"inside-single-line-block"
+			]
 		} ],
 		"declaration-no-important": true,
 
