@@ -122,6 +122,13 @@ module.exports = {
 		"property-case": [ "lower" ],
 		"property-no-unknown": true,
 
+		"rule-empty-line-before": [
+			"always-multi-line", {
+				"except": [ "first-nested" ],
+				"ignore": [ "after-comment" ]
+			}
+		],
+
 		"selector-attribute-brackets-space-inside": [ "always" ],
 		"selector-attribute-operator-space-after": [ "never" ],
 		"selector-attribute-operator-space-before": [ "never" ],
