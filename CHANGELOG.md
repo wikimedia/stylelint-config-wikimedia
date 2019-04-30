@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.6.0 / 2019-04-30
+* Require stylelint 10.0.1, up from 9.6.0 (James D. Forrester)
+* .travis.yml: Stop testing in Node 6.x, EOLed (James D. Forrester)
+* build: Bump eslint-config-wikimedia from 0.9.0 to 0.11.0 (James D. Forrester)
+* Hygiene: Remove array syntax on single values (Volker E)
+* Hygiene: Order rules alphabetically (Volker E)
+
 ## 0.5.0 / 2018-11-28
 * Move stylelint to be a true dependency, not a peerDependency (James D. Forrester)
 * Bump stylelint dependency from 9.2.0 to 9.6.0 (James D. Forrester)
