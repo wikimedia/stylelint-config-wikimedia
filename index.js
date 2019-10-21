@@ -161,6 +161,7 @@ module.exports = {
 
 		"time-min-milliseconds": 100,
 
+		"unit-blacklist": "rem",
 		"unit-case": "lower",
 		"unit-no-unknown": true,
 
