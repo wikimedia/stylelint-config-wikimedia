@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.7.0 / 2019-10-22
+* Require stylelint 11.1.1, up from 10.1.0 (James D. Forrester)
+* New rule: Add `rem` to `unit-blacklist` (Volker E)
+* build: Upgrade stylelint to 10.1.0 and eslint-config-wikimedia to 0.13.4 (James D. Forrester)
+
 ## 0.6.0 / 2019-04-30
 * Require stylelint 10.0.1, up from 9.6.0 (James D. Forrester)
 * .travis.yml: Stop testing in Node 6.x, EOLed (James D. Forrester)
