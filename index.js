@@ -70,9 +70,9 @@ module.exports = {
 		} ],
 		"declaration-no-important": true,
 
-		// `px` values disable accessibility browser setting of user font overrides and 
+		// `px` values disable accessibility browser setting of user font overrides and
 		// should be set in relative units like `em` or `rem` instead.
-		"declaration-property-unit-blacklist": { 
+		"declaration-property-unit-blacklist": {
 			"font-size": "px",
 			"line-height": "px"
 		},
