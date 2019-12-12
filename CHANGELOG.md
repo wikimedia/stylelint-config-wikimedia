@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.8.0 / 2019-12-11
+* Require stylelint 12.0.0, up from 11.1.1 (James D. Forrester)
+
 ## 0.7.0 / 2019-10-22
 * Require stylelint 11.1.1, up from 10.1.0 (James D. Forrester)
 * New rule: Add `rem` to `unit-blacklist` (Volker E)
