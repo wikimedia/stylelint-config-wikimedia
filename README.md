@@ -14,11 +14,11 @@ $ npm install -D stylelint-config-wikimedia
 
 ## Usage
 
-Set your `stylelint` config file, `.stylelintrc`, to:
+Set your `stylelint` config file, `.stylelintrc.json`, to:
 
 ```json
 {
-  "extends": "stylelint-config-wikimedia"
+	"extends": "stylelint-config-wikimedia"
 }
 ```
 
