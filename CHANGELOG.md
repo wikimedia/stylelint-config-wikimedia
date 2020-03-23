@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.9.0 / 2020-02-14
+* Require stylelint 13.2.0, up from 12.0.0 (James D. Forrester)
+* README: Encourage naming config files .stylelintrc.json, with a tab (James Forrester)
+
+## 0.8.0 / 2019-12-11
+* Require stylelint 12.0.0, up from 11.1.1 (James D. Forrester)
+
 ## 0.7.0 / 2019-10-22
 * Require stylelint 11.1.1, up from 10.1.0 (James D. Forrester)
 * New rule: Add `rem` to `unit-blacklist` (Volker E)
