@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.10.0 / 2020-03-31
+* Require stylelint 13.2.1, up from 13.2.0 (James D. Forrester)
+* build: Bump package-lock for npm audit (James D. Forrester)
+* build: Replace Travis with GitHub Actions (James D. Forrester)
+
 ## 0.9.0 / 2020-02-14
 * Require stylelint 13.2.0, up from 12.0.0 (James D. Forrester)
 * README: Encourage naming config files .stylelintrc.json, with a tab (James Forrester)
