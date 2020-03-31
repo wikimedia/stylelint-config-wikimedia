@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-wikimedia",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "description": "Wikimedia shareable config for stylelint",
   "keywords": [
     "code",
