@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.10.1 / 2020-04-15
+* Require stylelint 13.3.2, up from 13.2.1 (James D. Forrester)
+
 ## 0.10.0 / 2020-03-31
 * Require stylelint 13.2.1, up from 13.2.0 (James D. Forrester)
 * build: Bump package-lock for npm audit (James D. Forrester)
