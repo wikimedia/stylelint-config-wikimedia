@@ -33,6 +33,6 @@
     "grunt-eslint": "22.0.0"
   },
   "dependencies": {
-    "stylelint": "13.2.1"
+    "stylelint": "13.3.2"
   }
 }
