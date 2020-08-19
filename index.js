@@ -1,3 +1,5 @@
+"use strict";
+
 /* Use JSON-style double quotes */
 /* eslint quotes: ["error", "double"] */
 /* eslint quote-props: ["error", "always"] */

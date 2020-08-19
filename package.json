@@ -28,9 +28,9 @@
     "index.js"
   ],
   "devDependencies": {
-    "eslint-config-wikimedia": "0.15.2",
+    "eslint-config-wikimedia": "0.17.0",
     "grunt": "1.1.0",
-    "grunt-eslint": "22.0.0"
+    "grunt-eslint": "23.0.0"
   },
   "dependencies": {
     "stylelint": "13.3.2"
