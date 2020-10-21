@@ -22,6 +22,21 @@ Set your `stylelint` config file, `.stylelintrc.json`, to:
 }
 ```
 
+If you would also like to enable rules to disallow CSS which is unsupported by [Grade A](https://www.mediawiki.org/wiki/Compatibility#Modern_(Grade_A)) or [Grade C](https://www.mediawiki.org/wiki/Compatibility#Basic_(Grade_C)) browsers, you can use the following configs instead:
+
+```json
+{
+	"extends": "stylelint-config-wikimedia/grade-a"
+}
+```
+
+```json
+{
+	"extends": "stylelint-config-wikimedia/grade-c"
+}
+```
+
+
 ### Extending the config
 Simply add a `"rules"` object to your config file, and add your over-rides there.
 
