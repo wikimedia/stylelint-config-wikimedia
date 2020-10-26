@@ -15,7 +15,8 @@
 				"iOS >= 5",
 				"android >= 3"
 			],
-			"severity": "warning"
+			"severity": "warning",
+			"ignorePartialSupport": true
 		} ]
 	}
 }

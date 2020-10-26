@@ -34,6 +34,6 @@
   },
   "dependencies": {
     "stylelint": "13.7.0",
-    "stylelint-no-unsupported-browser-features": "4.0.0"
+    "stylelint-no-unsupported-browser-features": "4.1.3"
   }
 }
