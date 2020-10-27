@@ -7,7 +7,7 @@
 		"plugin/no-unsupported-browser-features": [ true, {
 			"browsers": [
 				"chrome >= 1",
-				"firefox >= 3",
+				"firefox >= 3.6",
 				"opera >= 15",
 				"edge >= 12",
 				"ie >= 9",
