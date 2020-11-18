@@ -25,7 +25,9 @@
   "files": [
     "CHANGELOG.md",
     "LICENSE",
-    "index.js"
+    "index.js",
+    "grade-a.json",
+    "grade-c.json"
   ],
   "devDependencies": {
     "eslint-config-wikimedia": "0.17.0",
