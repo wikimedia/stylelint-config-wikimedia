@@ -72,7 +72,7 @@ module.exports = {
 		} ],
 		"declaration-no-important": true,
 
-		"declaration-property-value-blacklist": {
+		"declaration-property-value-disallowed-list": {
 			"/^border/": "none",
 			"/^outline/": "none"
 		},
@@ -81,7 +81,7 @@ module.exports = {
 		"font-family-no-missing-generic-family-keyword": true,
 		"font-weight-notation": "named-where-possible",
 
-		"function-blacklist": "rgb",
+		"function-disallowed-list": "rgb",
 		"function-calc-no-unspaced-operator": true,
 		"function-comma-newline-after": "never-multi-line",
 		"function-comma-newline-before": "never-multi-line",
@@ -163,7 +163,7 @@ module.exports = {
 
 		"time-min-milliseconds": 100,
 
-		"unit-blacklist": "rem",
+		"unit-disallowed-list": "rem",
 		"unit-case": "lower",
 		"unit-no-unknown": true,
 
