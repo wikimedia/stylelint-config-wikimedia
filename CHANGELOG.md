@@ -1,5 +1,20 @@
 # Changelog
 
+## 0.10.2 / 2020-11-18
+* Require stylelint 13.7.0, up from 13.3.2 (James D. Forrester)
+* Create Grade A/C presets for plugin/no-unsupported-browser-features (Ed Sanders)
+* grade-a: Enable new ignorePartialSupport flag (Ed Sanders)
+* grade-c: Bump FireFox to 3.6 (Ed Sanders)
+* build: Bump various devDependencies to latest (James D. Forrester)
+
+## 0.10.1 / 2020-04-15
+* Require stylelint 13.3.2, up from 13.2.1 (James D. Forrester)
+
+## 0.10.0 / 2020-03-31
+* Require stylelint 13.2.1, up from 13.2.0 (James D. Forrester)
+* build: Bump package-lock for npm audit (James D. Forrester)
+* build: Replace Travis with GitHub Actions (James D. Forrester)
+
 ## 0.9.0 / 2020-02-14
 * Require stylelint 13.2.0, up from 12.0.0 (James D. Forrester)
 * README: Encourage naming config files .stylelintrc.json, with a tab (James Forrester)
