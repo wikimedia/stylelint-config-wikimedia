@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-wikimedia",
-  "version": "0.10.2",
+  "version": "0.10.3",
   "description": "Wikimedia shareable config for stylelint",
   "keywords": [
     "code",
@@ -35,7 +35,7 @@
     "grunt-eslint": "23.0.0"
   },
   "dependencies": {
-    "stylelint": "13.7.0",
+    "stylelint": "13.8.0",
     "stylelint-no-unsupported-browser-features": "4.1.4"
   }
 }

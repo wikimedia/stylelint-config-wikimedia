@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.10.3 / 2020-11-19
+* Update names of "-disallowed-list" keys (Ed Sanders)
+* Require stylelint 13.8.0, up from 13.7.0 (Ed Sanders)
+
 ## 0.10.2 / 2020-11-18
 * Require stylelint 13.7.0, up from 13.3.2 (James D. Forrester)
 * Create Grade A/C presets for plugin/no-unsupported-browser-features (Ed Sanders)
