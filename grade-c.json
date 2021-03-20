@@ -6,14 +6,14 @@
 	"rules": {
 		"plugin/no-unsupported-browser-features": [ true, {
 			"browsers": [
-				"chrome >= 1",
-				"firefox >= 3.6",
-				"opera >= 15",
+				"chrome >= 31",
+				"firefox >= 27",
+				"opera >= 18",
 				"edge >= 12",
 				"ie >= 9",
-				"safari >= 3",
-				"iOS >= 5",
-				"android >= 3"
+				"safari >= 9.1",
+				"iOS >= 9",
+				"android >= 4.3"
 			],
 			"severity": "warning",
 			"ignorePartialSupport": true
