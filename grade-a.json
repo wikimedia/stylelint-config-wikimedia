@@ -11,9 +11,9 @@
 				"last 2 opera versions",
 				"last 2 edge versions",
 				"ie >= 11",
-				"safari >= 5.1",
-				"iOS >= 6.1",
-				"android >= 4.1"
+				"safari >= 9.1",
+				"iOS >= 9",
+				"android >= 4.3"
 			],
 			"severity": "warning",
 			"ignorePartialSupport": true
