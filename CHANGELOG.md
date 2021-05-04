@@ -1,5 +1,7 @@
 # Changelog
 
+* Rename 'grade-a' and 'grade-c' to 'support-modern' and 'support-basic'
+
 ## 0.10.3 / 2020-11-19
 * Update names of "-disallowed-list" keys (Ed Sanders)
 * Require stylelint 13.8.0, up from 13.7.0 (Ed Sanders)

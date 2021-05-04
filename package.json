@@ -26,8 +26,8 @@
     "CHANGELOG.md",
     "LICENSE",
     "index.js",
-    "grade-a.json",
-    "grade-c.json"
+    "support-modern.json",
+    "support-basic.json"
   ],
   "devDependencies": {
     "eslint-config-wikimedia": "0.19.0",
