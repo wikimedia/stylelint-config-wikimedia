@@ -22,17 +22,17 @@ Set your `stylelint` config file, `.stylelintrc.json`, to:
 }
 ```
 
-If you would also like to enable rules to disallow CSS which is unsupported by [Grade A](https://www.mediawiki.org/wiki/Compatibility#Modern_(Grade_A)) or [Grade C](https://www.mediawiki.org/wiki/Compatibility#Basic_(Grade_C)) browsers, you can use the following configs instead:
+If you would also like to enable rules to disallow CSS which is unsupported by modern browsers [Grade A](https://www.mediawiki.org/wiki/Compatibility#Modern_(Grade_A)) or basic supported browsers [Grade C](https://www.mediawiki.org/wiki/Compatibility#Basic_(Grade_C)) browsers, you can use the following configs instead:
 
 ```json
 {
-	"extends": "stylelint-config-wikimedia/grade-a"
+	"extends": "stylelint-config-wikimedia/support-modern"
 }
 ```
 
 ```json
 {
-	"extends": "stylelint-config-wikimedia/grade-c"
+	"extends": "stylelint-config-wikimedia/support-basic"
 }
 ```
 
