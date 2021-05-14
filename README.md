@@ -22,7 +22,7 @@ Set your `stylelint` config file, `.stylelintrc.json`, to:
 }
 ```
 
-If you would also like to enable rules to disallow CSS which is unsupported by modern browsers [Grade A](https://www.mediawiki.org/wiki/Compatibility#Modern_(Grade_A)) or basic supported browsers [Grade C](https://www.mediawiki.org/wiki/Compatibility#Basic_(Grade_C)) browsers, you can use the following configs instead:
+If you would also like to enable rules to disallow CSS which is unsupported by modern browsers [Grade A](https://www.mediawiki.org/wiki/Compatibility#Modern_(Grade_A)) or basic supported browsers [Grade C](https://www.mediawiki.org/wiki/Compatibility#Basic_(Grade_C)) browsers, you can use the following configurations instead:
 
 ```json
 {
@@ -37,13 +37,21 @@ If you would also like to enable rules to disallow CSS which is unsupported by m
 ```
 
 
-### Extending the config
-Simply add a `"rules"` object to your config file, and add your over-rides there.
+### Extend or override the configuration
+Add a `"rules"` object to your config file, and add your overrides or additional rules there, for example:
+```json
+{
+	"extends": "stylelint-config-wikimedia/support-basic",
+	"rules": {
+		"max-empty-lines": null
+	}
+}
+```
 
 
 ## Changelog
 You can read the [changelog](CHANGELOG.md) for release versions.
 
 
-## Licence
-This is available under the [MIT LICENSE](LICENSE).
+## License
+This is available under the [MIT License](LICENSE).
