@@ -1,6 +1,11 @@
 # Changelog
 
-* Rename 'grade-a' and 'grade-c' to 'support-modern' and 'support-basic'
+## 0.11.0 / 2021-06-03
+* Add "declaration-property-unit-disallowed-list" with `px` for `font-size` and `line-height` (Volker E)
+* build: Update dependencies/devDependencies to latest (Ed Sanders)
+* build: Rename 'grade-a' and 'grade-c' to 'support-modern' and 'support-basic' (Volker E)
+* build: Upgrade eslint-config-wikimedia from 0.17.0 to 0.19.0 (James D. Forrester)
+* Grade A/C: Bump MediaWiki browser versions (Ed Sanders)
 
 ## 0.10.3 / 2020-11-19
 * Update names of "-disallowed-list" keys (Ed Sanders)
