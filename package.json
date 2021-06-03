@@ -31,11 +31,11 @@
 	],
 	"devDependencies": {
 		"eslint-config-wikimedia": "0.20.0",
-		"grunt": "1.4.0",
+		"grunt": "1.4.1",
 		"grunt-eslint": "23.0.0"
 	},
 	"dependencies": {
 		"stylelint": "13.13.1",
-		"stylelint-no-unsupported-browser-features": "4.1.4"
+		"stylelint-no-unsupported-browser-features": "5.0.1"
 	}
 }
