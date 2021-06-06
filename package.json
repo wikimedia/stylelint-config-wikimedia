@@ -26,6 +26,8 @@
 		"CHANGELOG.md",
 		"LICENSE",
 		"index.js",
+		"grade-a.js",
+		"grade-c.js",
 		"support-modern.json",
 		"support-basic.json"
 	],
