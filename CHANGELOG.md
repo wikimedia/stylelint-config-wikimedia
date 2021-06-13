@@ -1,7 +1,9 @@
 # Changelog
 
-## 0.11.0 / 2021-06-03
+## 0.11.1 / 2021-06-13
+* build: Fix grade-n filenames (Ed Sanders)
 
+## 0.11.0 / 2021-06-03
 * New rule: `declaration-property-unit-disallowed-list`, set to `px` for `font-size` and `line-height` (Volker E)
 * Support profiles: Rename 'grade-a' and 'grade-c' to 'support-modern' and 'support-basic' (Volker E)
 * Support profiles: Bump MediaWiki browser versions (Ed Sanders)
