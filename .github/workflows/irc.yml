@@ -13,8 +13,7 @@ jobs:
         server: irc.libera.chat
         channel: "#wikimedia-editing"
         nickname: WikimediaGitHub
-        message: |
-          ${{ github.actor }} opened PR ${{ github.event.html_url }}
+        message: ${{ github.actor }} opened PR ${{ github.event.pull_request.html_url }}
 
     - name: irc tag created
       uses: rectalogic/notify-irc@v1
@@ -23,5 +22,4 @@ jobs:
         server: irc.libera.chat
         channel: "#wikimedia-editing"
         nickname: WikimediaGitHub
-        message: |
-          ${{ github.actor }} tagged ${{ github.repository }} ${{ github.event.ref }}
+        message: ${{ github.actor }} tagged ${{ github.repository }} ${{ github.event.ref }}
