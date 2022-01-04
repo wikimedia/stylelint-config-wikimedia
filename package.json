@@ -34,10 +34,11 @@
 		"support-basic.json"
 	],
 	"devDependencies": {
-		"eslint-config-wikimedia": "0.21.0"
+		"eslint-config-wikimedia": "0.21.0",
+		"postcss-less": "5.0.0"
 	},
 	"dependencies": {
-		"stylelint": "13.13.1",
-		"stylelint-no-unsupported-browser-features": "5.0.1"
+		"stylelint": "14.2.0",
+		"stylelint-no-unsupported-browser-features": "5.0.2"
 	}
 }
