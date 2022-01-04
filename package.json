@@ -20,7 +20,9 @@
 	"bugs": "https://github.com/wikimedia/stylelint-config-wikimedia/issues",
 	"main": "index.js",
 	"scripts": {
-		"test": "grunt test"
+		"test": "npm run lint",
+		"lint": "npm run lint:eslint",
+		"lint:eslint": "eslint --cache --max-warnings 0 ."
 	},
 	"files": [
 		"CHANGELOG.md",
@@ -32,9 +34,7 @@
 		"support-basic.json"
 	],
 	"devDependencies": {
-		"eslint-config-wikimedia": "0.20.0",
-		"grunt": "1.4.1",
-		"grunt-eslint": "23.0.0"
+		"eslint-config-wikimedia": "0.21.0"
 	},
 	"dependencies": {
 		"stylelint": "13.13.1",
