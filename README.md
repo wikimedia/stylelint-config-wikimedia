@@ -52,6 +52,5 @@ Add a `"rules"` object to your config file, and add your overrides or additional
 ## Changelog
 You can read the [changelog](CHANGELOG.md) for release versions.
 
-
 ## License
 This is available under the [MIT License](LICENSE).
