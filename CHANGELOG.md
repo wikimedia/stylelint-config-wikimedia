@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.12.0 / 2022-01-14
+* Require stylelint 14.2.0, up from 13.13.1 (James D. Forrester)
+* build: Fix npm audit issues, 2021-09-16 (James D. Forrester)
+* build: Fix undefined PR url in IRC notifs (Timo Tijhof)
+* build: Move linting from Grunt to direct (Volker E)
+* build: Update eslint-config-wikimedia from 0.20.0 to 0.21.0 (Volker E)
+* ci: Make Node CI use node v12.x and v14.x (Volker E)
+* docs: Bump LICENSE year (Volker E)
+
 ## 0.11.1 / 2021-06-13
 * build: Fix grade-n filenames (Ed Sanders)
 
