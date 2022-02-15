@@ -34,7 +34,7 @@
 		"support-basic.json"
 	],
 	"devDependencies": {
-		"eslint-config-wikimedia": "0.21.0"
+		"eslint-config-wikimedia": "0.22.1"
 	},
 	"dependencies": {
 		"postcss-less": "6.0.0",
