@@ -37,7 +37,7 @@
 		"eslint-config-wikimedia": "0.22.1"
 	},
 	"dependencies": {
-		"postcss-less": "5.0.0",
+		"postcss-less": "6.0.0",
 		"stylelint": "14.2.0",
 		"stylelint-no-unsupported-browser-features": "5.0.2"
 	}
