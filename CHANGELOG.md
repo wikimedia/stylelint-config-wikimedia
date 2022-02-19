@@ -2,22 +2,14 @@
 
 ## 0.12.0 / 2022-01-14
 * Require stylelint 14.2.0, up from 13.13.1 (James D. Forrester)
-* build: Fix npm audit issues, 2021-09-16 (James D. Forrester)
-* build: Fix undefined PR url in IRC notifs (Timo Tijhof)
-* build: Move linting from Grunt to direct (Volker E)
-* build: Update eslint-config-wikimedia from 0.20.0 to 0.21.0 (Volker E)
-* ci: Make Node CI use node v12.x and v14.x (Volker E)
-* docs: Bump LICENSE year (Volker E)
 
 ## 0.11.1 / 2021-06-13
-* build: Fix grade-n filenames (Ed Sanders)
+* Fix grade-n filenames (Ed Sanders)
 
 ## 0.11.0 / 2021-06-03
 * New rule: `declaration-property-unit-disallowed-list`, set to `px` for `font-size` and `line-height` (Volker E)
 * Support profiles: Rename 'grade-a' and 'grade-c' to 'support-modern' and 'support-basic' (Volker E)
 * Support profiles: Bump MediaWiki browser versions (Ed Sanders)
-* build: Update dependencies/devDependencies to latest (Ed Sanders)
-* build: Upgrade eslint-config-wikimedia from 0.17.0 to 0.19.0 (James D. Forrester)
 
 ## 0.10.3 / 2020-11-19
 * Update names of "-disallowed-list" keys (Ed Sanders)
@@ -28,19 +20,15 @@
 * Create Grade A/C presets for plugin/no-unsupported-browser-features (Ed Sanders)
 * grade-a: Enable new ignorePartialSupport flag (Ed Sanders)
 * grade-c: Bump FireFox to 3.6 (Ed Sanders)
-* build: Bump various devDependencies to latest (James D. Forrester)
 
 ## 0.10.1 / 2020-04-15
 * Require stylelint 13.3.2, up from 13.2.1 (James D. Forrester)
 
 ## 0.10.0 / 2020-03-31
 * Require stylelint 13.2.1, up from 13.2.0 (James D. Forrester)
-* build: Bump package-lock for npm audit (James D. Forrester)
-* build: Replace Travis with GitHub Actions (James D. Forrester)
 
 ## 0.9.0 / 2020-02-14
 * Require stylelint 13.2.0, up from 12.0.0 (James D. Forrester)
-* README: Encourage naming config files .stylelintrc.json, with a tab (James Forrester)
 
 ## 0.8.0 / 2019-12-11
 * Require stylelint 12.0.0, up from 11.1.1 (James D. Forrester)
@@ -48,14 +36,9 @@
 ## 0.7.0 / 2019-10-22
 * Require stylelint 11.1.1, up from 10.1.0 (James D. Forrester)
 * New rule: Add `rem` to `unit-blacklist` (Volker E)
-* build: Upgrade stylelint to 10.1.0 and eslint-config-wikimedia to 0.13.4 (James D. Forrester)
 
 ## 0.6.0 / 2019-04-30
 * Require stylelint 10.0.1, up from 9.6.0 (James D. Forrester)
-* .travis.yml: Stop testing in Node 6.x, EOLed (James D. Forrester)
-* build: Bump eslint-config-wikimedia from 0.9.0 to 0.11.0 (James D. Forrester)
-* Hygiene: Remove array syntax on single values (Volker E)
-* Hygiene: Order rules alphabetically (Volker E)
 
 ## 0.5.0 / 2018-11-28
 * Move stylelint to be a true dependency, not a peerDependency (James D. Forrester)
@@ -68,8 +51,6 @@
 * New rule: `rule-empty-line-before`, set to `always-multi-line` with exemptions (Volker E)
 * New rule: `selector-max-empty-lines`, set to `0` (Volker E)
 * Changed rule: `block-opening-brace-space-before`, from `always-single-line` to `always` (Volker E)
-* build: Bump all devDependencies to latest (James D. Forrester)
-* Travis: Modernise test targets, enable npm cacheing, move reports (James D. Forrester)
 
 ## 0.4.3 / 2018-04-04
 * build: Bump stylelint dependency from 8.2.0 to 8.4.0 (ricordisamoa)
@@ -78,7 +59,6 @@
 ## 0.4.2 / 2017-10-26
 * New rule: `function-blacklist`, configured to prevent `rgb()` color notation (Volker E)
 * Changed rule: `selector-attribute-brackets-space-inside`, set to `always` not `never` (Ed Sanders)
-* build: Replace jscs with eslint (Ed Sanders)
 * build: Bump stylelint dependency from 7.8.0 to 7.12.0 (Ed Sanders)
 * build: Bump stylelint dependency from 7.12.0 to 8.2.0 (James D. Forrester)
 
@@ -157,7 +137,6 @@
 * New rule: `stylelint-value-border-zero` (via plugin), configured as '0' (Volker E)
 * Change rule: Set `selector-pseudo-element-colon-notation` to 'single', not 'double' (Ed Sanders)
 * Change rule: Set `value-list-comma-newline-before` to 'never-multi-line', not 'always-multi-line' (Volker E)
-* build: Provide a .jscsrc file for local JavaScript linting (James D. Forrester)
 
 ## 0.1.0 / 2016-05-17
 * Initial release (James D. Forrester)
