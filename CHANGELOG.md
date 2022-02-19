@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.12.1 / 2022-02-19
+* Upgrade postcss-less from devDependency to dependency (James D. Forrester)
+* Update postcss-less to 6.0.0 (Ed Sanders)
+
 ## 0.12.0 / 2022-01-14
 * Require stylelint 14.2.0, up from 13.13.1 (James D. Forrester)
 
