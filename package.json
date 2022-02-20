@@ -20,7 +20,7 @@
 	"bugs": "https://github.com/wikimedia/stylelint-config-wikimedia/issues",
 	"main": "index.js",
 	"scripts": {
-		"test": "npm run lint && qunit test/index.js",
+		"test": "qunit && npm run lint",
 		"lint": "npm run lint:eslint",
 		"lint:eslint": "eslint --cache --max-warnings 0 ."
 	},

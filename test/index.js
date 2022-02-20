@@ -1,8 +1,8 @@
 'use strict';
 
-const fs = require( 'fs' ),
-	path = require( 'path' ),
-	configs = require( '../package' ).files;
+const fs = require( 'fs' );
+const path = require( 'path' );
+const configs = require( '../package.json' ).files;
 
 QUnit.module( 'package.json', () => {
 	QUnit.test( 'All files are included', ( assert ) => {
@@ -17,7 +17,7 @@ QUnit.module( 'package.json', () => {
 				( ext === '.js' || ext === '.json' ) &&
 				!excludeList.includes( file )
 			) {
-				assert.true( configs.includes( file ), `'${file}' found in packge.json's 'files' list` );
+				assert.true( configs.includes( file ), `'${file}' found in package.json 'files' list` );
 			}
 		} );
 	} );
