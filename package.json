@@ -20,7 +20,7 @@
 	"bugs": "https://github.com/wikimedia/stylelint-config-wikimedia/issues",
 	"main": "index.js",
 	"scripts": {
-		"test": "npm run lint",
+		"test": "npm run lint && qunit test/index.js",
 		"lint": "npm run lint:eslint",
 		"lint:eslint": "eslint --cache --max-warnings 0 ."
 	},
@@ -34,7 +34,8 @@
 		"support-basic.json"
 	],
 	"devDependencies": {
-		"eslint-config-wikimedia": "0.22.1"
+		"eslint-config-wikimedia": "0.22.1",
+		"qunit": "^2.18.0"
 	},
 	"dependencies": {
 		"postcss-less": "6.0.0",
