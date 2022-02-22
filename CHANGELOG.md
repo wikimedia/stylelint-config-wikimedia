@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.12.2 / 2022-02-22
+* Add postcss-less as a peerDependency too (James D. Forrester)
+
 ## 0.12.1 / 2022-02-19
 * Upgrade postcss-less from devDependency to dependency (James D. Forrester)
 * Update postcss-less to 6.0.0 (Ed Sanders)
