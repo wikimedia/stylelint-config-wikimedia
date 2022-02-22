@@ -41,5 +41,8 @@
 		"postcss-less": "6.0.0",
 		"stylelint": "14.2.0",
 		"stylelint-no-unsupported-browser-features": "5.0.2"
+	},
+	"peerDependencies": {
+		"postcss-less": "^6.0.0"
 	}
 }
