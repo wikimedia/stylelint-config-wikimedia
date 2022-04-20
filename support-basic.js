@@ -10,6 +10,9 @@ module.exports = {
 		"plugin/no-unsupported-browser-features": [ true, {
 			"browsers": require( 'browserslist-config-wikimedia/basic' ),
 			"severity": "warning",
+			"ignore": [
+				"outline"
+			],
 			"ignorePartialSupport": true
 		} ]
 	}
