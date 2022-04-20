@@ -30,14 +30,15 @@
 		"index.js",
 		"grade-a.json",
 		"grade-c.json",
-		"support-modern.json",
-		"support-basic.json"
+		"support-modern.js",
+		"support-basic.js"
 	],
 	"devDependencies": {
 		"eslint-config-wikimedia": "0.22.1",
 		"qunit": "^2.18.0"
 	},
 	"dependencies": {
+		"browserslist-config-wikimedia": "0.3.0",
 		"postcss-less": "6.0.0",
 		"stylelint": "14.2.0",
 		"stylelint-no-unsupported-browser-features": "5.0.2"
