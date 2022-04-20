@@ -1,22 +1,16 @@
-{
+'use strict';
+
+/* eslint-disable quotes, quote-props */
+module.exports = {
 	"plugins": [
 		"stylelint-no-unsupported-browser-features"
 	],
 	"extends": "./index",
 	"rules": {
 		"plugin/no-unsupported-browser-features": [ true, {
-			"browsers": [
-				"chrome >= 31",
-				"firefox >= 27",
-				"opera >= 18",
-				"edge >= 12",
-				"ie >= 9",
-				"safari >= 9.1",
-				"iOS >= 9",
-				"android >= 4.3"
-			],
+			"browsers": require( 'browserslist-config-wikimedia/basic' ),
 			"severity": "warning",
 			"ignorePartialSupport": true
 		} ]
 	}
-}
+};
