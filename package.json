@@ -39,10 +39,10 @@
 		"qunit": "^2.18.0"
 	},
 	"dependencies": {
-		"browserslist-config-wikimedia": "0.3.0",
+		"browserslist-config-wikimedia": "0.4.0",
 		"postcss-less": "6.0.0",
 		"stylelint": "14.2.0",
-		"stylelint-no-unsupported-browser-features": "5.0.2"
+		"stylelint-no-unsupported-browser-features": "5.0.3"
 	},
 	"peerDependencies": {
 		"postcss-less": "^6.0.0"
