@@ -1,5 +1,5 @@
 div {
-	/* Not supported by IE11 */
+	/* Not supported by IE11. */
 	/* stylelint-disable-next-line plugin/no-unsupported-browser-features */
 	background-blend-mode: difference, normal;
 	/* stylelint-disable-next-line plugin/no-unsupported-browser-features */
