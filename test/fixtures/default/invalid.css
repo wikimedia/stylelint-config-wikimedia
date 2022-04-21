@@ -1,0 +1,231 @@
+div {
+	/* stylelint-disable-next-line indentation */
+    width: 1px;
+	/* stylelint-disable max-empty-lines */
+
+
+	/* stylelint-enable max-empty-lines */
+	height: 1px;
+	/* stylelint-disable-next-line no-eol-whitespace, declaration-block-semicolon-newline-after, declaration-block-semicolon-newline-before, declaration-block-semicolon-space-before */
+	color: #fff ; 
+	background: #000;
+}
+@Media( max-width: 600px ) { /* stylelint-disable-line at-rule-empty-line-before, at-rule-name-case, at-rule-name-space-after */
+	color: #fff;
+}
+
+/* stylelint-disable-next-line at-rule-no-unknown */
+@unknown {
+	color: #fff;
+}
+
+/* stylelint-disable-next-line at-rule-semicolon-newline-after */
+@import url( x.css ); @import url( y.css );
+
+span {
+	color: #fff;
+
+} /* stylelint-disable-line block-closing-brace-empty-line-before */
+
+/* stylelint-disable-next-line block-closing-brace-newline-after, block-closing-brace-space-after, block-closing-brace-space-before, block-opening-brace-newline-after, block-opening-brace-newline-before, block-opening-brace-space-after, block-opening-brace-space-before */
+.a{color: #fff;}.b{color: #fff;}
+
+.b2 {
+	/* stylelint-disable-next-line block-closing-brace-newline-before */
+	color: #fff;}
+
+/* stylelint-disable-next-line block-no-empty */
+.c {
+}
+
+.d {
+	/* stylelint-disable-next-line color-hex-case, color-hex-length */
+	color: #FFFFFF;
+	/* stylelint-disable-next-line color-named */
+	background: red;
+	/* stylelint-disable-next-line color-no-invalid-hex */
+	outline-color: #f1zz;
+}
+
+/* stylelint-disable-next-line comment-no-empty, comment-whitespace-inside */
+/**/
+
+.e {
+	/* stylelint-disable-next-line declaration-bang-space-after, declaration-bang-space-before, declaration-no-important */
+	color: #fff! important;
+	background: #fff;
+	/* stylelint-disable-next-line declaration-block-no-duplicate-properties */
+	color: #fff;
+}
+
+.f {
+	padding-top: 1px;
+	padding-right: 2px;
+	padding-bottom: 3px;
+	/* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */
+	padding-left: 4px;
+	/* stylelint-disable-next-line declaration-block-no-shorthand-property-overrides */
+	padding: 0;
+	/* stylelint-disable-next-line declaration-block-semicolon-newline-after */
+	margin: 0;outline: 0;
+	/* stylelint-disable-next-line declaration-block-trailing-semicolon */
+	color: #000
+}
+
+.g {
+	/* stylelint-disable-next-line declaration-colon-space-after, declaration-colon-space-before */
+	color :#000;
+}
+
+.h {
+
+	color: #000; /* stylelint-disable-line declaration-empty-line-before */
+}
+
+/* stylelint-disable-next-line declaration-block-single-line-max-declarations, declaration-block-semicolon-space-after, declaration-block-semicolon-newline-after, block-opening-brace-newline-before, block-opening-brace-newline-after, block-closing-brace-space-after */
+.i { margin: 0;padding: 0; }
+
+.j {
+	/* stylelint-disable-next-line declaration-property-unit-disallowed-list */
+	font-size: 10px;
+	/* stylelint-disable-next-line declaration-property-unit-disallowed-list */
+	line-height: 15px;
+	/* stylelint-disable-next-line declaration-property-value-disallowed-list */
+	border: none;
+	/* stylelint-disable-next-line declaration-property-value-disallowed-list */
+	outline: none;
+	/* stylelint-disable-next-line font-family-name-quotes, font-family-no-missing-generic-family-keyword */
+	font-family: Times New Roman;
+	/* stylelint-disable-next-line font-weight-notation */
+	font-weight: 400;
+	/* stylelint-disable-next-line function-disallowed-list */
+	color: rgb( 0, 0, 0 );
+	/* stylelint-disable-next-line function-calc-no-unspaced-operator, function-parentheses-space-inside, unit-no-unknown */
+	top: calc(1px+2px);
+	/* stylelint-disable-next-line function-comma-newline-after, function-comma-newline-before, function-comma-space-after, function-comma-space-before, function-parentheses-space-inside, function-max-empty-lines, value-list-max-empty-lines */
+	transform: translate(1 ,
+
+	1 ); /* stylelint-disable-line function-parentheses-newline-inside */
+}
+
+.k {
+	/* stylelint-disable-next-line function-linear-gradient-no-nonstandard-direction, function-name-case */
+	background: Linear-gradient( top, #fff, #000 );
+	/* stylelint-disable-next-line function-url-no-scheme-relative, function-url-quotes */
+	background-image: url( '//en.wikipedia.org' );
+	/* stylelint-disable-next-line function-whitespace-after */
+	transform: translate( 1, 1 )scale( 3 );
+	/* stylelint-disable-next-line length-zero-no-unit */
+	top: 0px;
+}
+
+/* stylelint-disable-next-line media-feature-colon-space-after, media-feature-colon-space-before, media-feature-name-case, media-feature-parentheses-space-inside */
+@media ( MAX-width :600px) {
+	/* ... */
+}
+
+/* stylelint-disable-next-line media-feature-name-no-unknown */
+@media ( unknown: 600px ) {
+	/* ... */
+}
+
+/* stylelint-disable-next-line media-feature-range-operator-space-after, media-feature-range-operator-space-before */
+@media ( width>=600px ) {
+	/* ... */
+}
+
+@media screen and ( color )
+	, projection and ( color ) { /* stylelint-disable-line media-query-list-comma-newline-after, media-query-list-comma-newline-before, media-query-list-comma-space-before */
+	/* ... */
+}
+
+/* stylelint-disable-next-line media-query-list-comma-space-after */
+@media screen and ( color ),projection and ( color ) {
+	/* ... */
+}
+
+.a .k {
+	/* ... */
+}
+
+/* stylelint-disable-next-line no-descending-specificity, no-duplicate-selectors */
+.k {
+	/* stylelint-disable-next-line no-invalid-double-slash-comments, property-no-unknown */
+	//color: #fff;
+	/* stylelint-disable-next-line no-extra-semicolons */
+	;
+	/* stylelint-disable-next-line no-unknown-animations */
+	animation-name: fancy-slide;
+	/* stylelint-disable-next-line number-leading-zero, number-no-trailing-zeros */
+	top: .10px;
+	/* stylelint-disable-next-line property-case */
+	Background: #000;
+}
+.l { /* stylelint-disable-line rule-empty-line-before */
+}
+
+/* stylelint-disable-next-line selector-attribute-brackets-space-inside, selector-attribute-operator-space-after, selector-attribute-operator-space-before, selector-attribute-quotes */
+[title = foo] {
+	/* ... */
+}
+
+/* stylelint-disable-next-line selector-combinator-space-after, selector-combinator-space-before, selector-descendant-combinator-no-non-space */
+.m+.n  .o {
+	/* ... */
+}
+
+.p ,.q { /* stylelint-disable-line selector-list-comma-newline-after, selector-list-comma-space-after, selector-list-comma-space-before */
+	/* ... */
+}
+
+/* stylelint-disable-next-line selector-max-empty-lines */
+.r
+
+, .s { /* stylelint-disable-line selector-list-comma-newline-after, selector-list-comma-newline-before, selector-list-comma-space-before */
+	/* ... */
+}
+
+/* stylelint-disable-next-line selector-max-id, selector-no-vendor-prefix */
+#id::-moz-placeholder {
+	/* ... */
+}
+
+/* stylelint-disable-next-line selector-pseudo-class-case, selector-pseudo-class-no-unknown, selector-pseudo-class-parentheses-space-inside, selector-pseudo-element-case, selector-pseudo-element-colon-notation */
+.t:HOVER:unknown:not(.a)::BEFORE {
+	/* ... */
+}
+
+/* stylelint-disable-next-line selector-type-case */
+INPUT {
+	/* ... */
+}
+
+/* stylelint-disable-next-line selector-type-no-unknown */
+unknown {
+	/* ... */
+}
+
+.u {
+	/* stylelint-disable-next-line string-no-newline, string-quotes */
+	content: "a
+	b";
+	/* stylelint-disable-next-line time-min-milliseconds */
+	animation: 80ms;
+	/* stylelint-disable-next-line unit-disallowed-list, unit-case */
+	top: 1REM;
+	/* stylelint-disable-next-line value-keyword-case */
+	display: BLOCK;
+	/* stylelint-disable-next-line value-list-max-empty-lines */
+	padding: 1px
+
+		2px;
+	/* stylelint-disable-next-line value-list-comma-space-after, value-list-comma-space-before */
+	font-family: serif ,sans-serif;
+	font-family: serif
+		, sans-serif; /* stylelint-disable-line value-list-comma-newline-after, value-list-comma-newline-before, value-list-comma-space-before */
+}
+
+.last {
+	color: #fff;
+	/* stylelint-disable-next-line no-missing-end-of-source-newline */
+}
