@@ -1,3 +1,6 @@
+/* We can't test no-empty-source */
+/* skip-stylelint-disable no-empty-source */
+
 div {
 	/* stylelint-disable-next-line indentation */
     width: 1px;
@@ -19,8 +22,8 @@ div {
 	color: #fff;
 }
 
-/* stylelint-disable-next-line at-rule-semicolon-newline-after */
-@import url( x.css ); @import url( y.css );
+/* stylelint-disable-next-line at-rule-semicolon-newline-after, no-invalid-position-at-import-rule, no-duplicate-at-import-rules */
+@import url( x.css ); @import url( x.css );
 
 span {
 	color: #fff;
@@ -50,12 +53,21 @@ span {
 /* stylelint-disable-next-line comment-no-empty, comment-whitespace-inside */
 /**/
 
+:root {
+	--foo: #fff;
+}
+
 .e {
+	/* stylelint-disable-next-line custom-property-no-missing-var-function */
+	color: --foo;
 	/* stylelint-disable-next-line declaration-bang-space-after, declaration-bang-space-before, declaration-no-important */
 	color: #fff! important;
 	background: #fff;
 	/* stylelint-disable-next-line declaration-block-no-duplicate-properties */
 	color: #fff;
+	--custom-property: #fff;
+	/* stylelint-disable-next-line declaration-block-no-duplicate-custom-properties */
+	--custom-property: #fff;
 }
 
 .f {
@@ -94,8 +106,8 @@ span {
 	border: none;
 	/* stylelint-disable-next-line declaration-property-value-disallowed-list */
 	outline: none;
-	/* stylelint-disable-next-line font-family-name-quotes, font-family-no-missing-generic-family-keyword */
-	font-family: Times New Roman;
+	/* stylelint-disable-next-line font-family-name-quotes, font-family-no-duplicate-names, font-family-no-missing-generic-family-keyword */
+	font-family: Times New Roman, Times New Roman;
 	/* stylelint-disable-next-line font-weight-notation */
 	font-weight: 400;
 	/* stylelint-disable-next-line function-disallowed-list */
@@ -117,6 +129,17 @@ span {
 	transform: translate( 1, 1 )scale( 3 );
 	/* stylelint-disable-next-line length-zero-no-unit */
 	top: 0px;
+}
+
+@keyframes fade {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		/* stylelint-disable-next-line keyframe-declaration-no-important, declaration-no-important */
+		opacity: 1 !important;
+	}
 }
 
 /* stylelint-disable-next-line media-feature-colon-space-after, media-feature-colon-space-before, media-feature-name-case, media-feature-parentheses-space-inside */
@@ -145,6 +168,12 @@ span {
 }
 
 .a .k {
+	/* stylelint-disable-next-line named-grid-areas-no-invalid */
+	grid-template-areas: '';
+}
+
+/* stylelint-disable-next-line no-irregular-whitespace */
+.nb .sp {
 	/* ... */
 }
 
@@ -190,8 +219,8 @@ span {
 	/* ... */
 }
 
-/* stylelint-disable-next-line selector-pseudo-class-case, selector-pseudo-class-no-unknown, selector-pseudo-class-parentheses-space-inside, selector-pseudo-element-case, selector-pseudo-element-colon-notation */
-.t:HOVER:unknown:not(.a)::BEFORE {
+/* stylelint-disable-next-line selector-pseudo-class-case, selector-pseudo-class-no-unknown, selector-pseudo-class-parentheses-space-inside, selector-pseudo-element-case, selector-pseudo-element-colon-notation, selector-pseudo-element-no-unknown */
+.t:HOVER:unknown:not(.a)::BEFORE::pseudo {
 	/* ... */
 }
 
