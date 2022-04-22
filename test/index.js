@@ -47,7 +47,7 @@ QUnit.module( 'default config', () => {
 			}
 
 			Object.keys( rules ).forEach( ( rule ) => {
-				// Disabled rules are covered below
+				// Disabled rules are covered below.
 				if ( isEnabled( rule ) ) {
 					const rDisableRule = new RegExp( `(/[/*]|<!--|#) stylelint-disable((-next)?-line)? ([a-z-/]+, ?)*?${rule}($|[^a-z-])` );
 					assert.true( rDisableRule.test( invalidFixtures ), `Rule '${rule}' is covered in invalid fixture` );
