@@ -166,6 +166,9 @@ module.exports = {
 	},
 	"overrides": [ {
 		"files": [ "**/*.less" ],
-		"customSyntax": "postcss-less"
+		"customSyntax": "postcss-less",
+		"rules": {
+			"no-invalid-position-at-import-rule": null
+		}
 	} ]
 };
