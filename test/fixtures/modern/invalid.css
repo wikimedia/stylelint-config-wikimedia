@@ -5,3 +5,8 @@ div {
 	/* stylelint-disable-next-line plugin/no-unsupported-browser-features */
 	position: sticky;
 }
+
+/* stylelint-disable-next-line selector-not-notation */
+div:not( .a, .b ) {
+	/* ... */
+}

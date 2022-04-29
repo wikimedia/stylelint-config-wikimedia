@@ -11,6 +11,8 @@ module.exports = {
 			"browsers": require( 'browserslist-config-wikimedia/modern' ),
 			"severity": "warning",
 			"ignorePartialSupport": true
-		} ]
+		} ],
+		// Must remain enabled as long as some of our "modern" browsers don't support https://caniuse.com/css-not-sel-list
+		"selector-not-notation": "simple"
 	}
 };
