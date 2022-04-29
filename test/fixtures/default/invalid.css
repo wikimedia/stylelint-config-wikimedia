@@ -152,7 +152,7 @@ span {
 	/* ... */
 }
 
-/* stylelint-disable-next-line media-feature-range-operator-space-after, media-feature-range-operator-space-before */
+/* stylelint-disable-next-line media-feature-range-operator-space-after, media-feature-range-operator-space-before, media-feature-name-no-unknown */
 @media ( width>=600px ) {
 	/* ... */
 }
