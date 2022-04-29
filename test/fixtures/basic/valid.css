@@ -1,0 +1,5 @@
+/* Valid: selector-not-notation */
+div:not( .a ),
+div:not( .b ) {
+	/* ... */
+}
