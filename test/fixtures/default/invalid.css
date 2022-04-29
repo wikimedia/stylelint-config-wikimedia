@@ -118,6 +118,8 @@ span {
 	transform: translate(1 ,
 
 	1 ); /* stylelint-disable-line function-parentheses-newline-inside */
+	/* stylelint-disable-next-line function-no-unknown */
+	transform: something( 2 );
 }
 
 .k {
