@@ -75,6 +75,10 @@ module.exports = {
 		},
 
 		"font-family-name-quotes": "always-unless-keyword",
+		"font-family-no-duplicate-names": [ true, {
+			// Allow the widely used 'monospace, monospace' hack for fixing the font size
+			"ignoreFontFamilyNames": [ "monospace" ]
+		} ],
 		"font-weight-notation": "named-where-possible",
 
 		"function-disallowed-list": "rgb",

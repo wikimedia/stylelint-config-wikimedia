@@ -1,0 +1,4 @@
+div {
+	/* Valid: font-family-no-duplicate-names's ignoreFontFamilyNames option */
+	font-family: monospace, monospace;
+}
