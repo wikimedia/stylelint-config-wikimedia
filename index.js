@@ -14,6 +14,8 @@ module.exports = {
 		"no-missing-end-of-source-newline": true,
 
 		// Other rules alphabetically
+		// MediaWiki will only support import in LESS files
+		"at-rule-disallowed-list": "import",
 		"at-rule-empty-line-before": [ "always", {
 			"except": [
 				"blockless-after-blockless",
@@ -168,6 +170,8 @@ module.exports = {
 		"files": [ "**/*.less" ],
 		"customSyntax": "postcss-less",
 		"rules": {
+			// MediaWiki will only support @import in LESS files
+			"at-rule-disallowed-list": null,
 			"no-invalid-position-at-import-rule": null
 		}
 	} ]
