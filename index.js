@@ -87,9 +87,7 @@ module.exports = {
 		"function-comma-space-after": "always",
 		"function-comma-space-before": "never",
 		"function-max-empty-lines": 0,
-		"function-name-case": [ "lower", {
-			"ignoreFunctions": "/^DXImageTransform.Microsoft.*$/"
-		} ],
+		"function-name-case": "lower",
 		"function-parentheses-newline-inside": "never-multi-line",
 		"function-parentheses-space-inside": "always",
 		"function-url-no-scheme-relative": true,
