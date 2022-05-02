@@ -32,7 +32,8 @@
 		"grade-a.json",
 		"grade-c.json",
 		"support-modern.js",
-		"support-basic.js"
+		"support-basic.js",
+		"rules/"
 	],
 	"devDependencies": {
 		"eslint-config-wikimedia": "0.22.1",
