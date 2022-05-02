@@ -5,6 +5,7 @@
 /* eslint quote-props: ["error", "always"] */
 module.exports = {
 	"extends": "stylelint-config-recommended",
+	"plugins": "./rules/no-at-import-css.js",
 	"rules": {
 		// Wikimedia Foundation ♡ whitespace in its own special way
 		// See also https://www.mediawiki.org/wiki/Manual:Coding_conventions/CSS#Whitespace
@@ -172,7 +173,10 @@ module.exports = {
 		"rules": {
 			// MediaWiki will only support @import in LESS files
 			"at-rule-disallowed-list": null,
-			"no-invalid-position-at-import-rule": null
+			// LESS imports can go anywhere
+			"no-invalid-position-at-import-rule": null,
+			// Don't allow CSS imports
+			"wikimedia/no-at-import-css": true
 		}
 	} ]
 };
