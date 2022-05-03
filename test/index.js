@@ -24,37 +24,50 @@ QUnit.module( 'package.json', () => {
 	} );
 } );
 
-QUnit.module( 'default config', () => {
-	const configName = 'default';
-	const fixturesDir = path.resolve( __dirname, `fixtures/${configName}` );
-	const fixturesFiles = fs.readdirSync( fixturesDir )
-		.map( ( file ) => path.resolve( fixturesDir, file ) );
+[ 'default', 'mediawiki' ].forEach( ( configName ) => {
+	QUnit.module( `${configName} config`, () => {
+		const fixturesDir = path.resolve( __dirname, `fixtures/${configName}` );
+		const fixturesFiles = fs.readdirSync( fixturesDir )
+			.map( ( file ) => path.resolve( fixturesDir, file ) );
 
-	const invalidFixturesFiles = fixturesFiles.filter( ( file ) => file.includes( '/invalid' ) );
-	const invalidFixtures = invalidFixturesFiles.map( ( file ) =>
-		fs.readFileSync( file ).toString()
-	).join( '' );
+		const invalidFixturesFiles = fixturesFiles.filter( ( file ) => file.includes( '/invalid' ) );
+		const tested = {};
 
-	QUnit.test( 'Rules are covered in invalid fixture', ( assert ) => {
-		const done = assert.async();
+		[ '.css', '.less' ].forEach( ( ext ) => {
+			const invalidFixturesFiltered = invalidFixturesFiles
+				.filter( ( file ) => path.extname( file ) === ext );
 
-		stylelint.resolveConfig( fixturesDir ).then( ( config ) => {
-
-			const rules = config.rules;
-
-			function isEnabled( rule ) {
-				return rules[ rule ] !== null;
+			if ( !invalidFixturesFiltered.length ) {
+				return;
 			}
 
-			Object.keys( rules ).forEach( ( rule ) => {
-				// Disabled rules are covered below.
-				if ( isEnabled( rule ) ) {
-					const rDisableRule = new RegExp( `(/[/*]|<!--|#) (skip-)?stylelint-disable((-next)?-line)? ([a-z-/]+, ?)*?${rule}($|[^a-z-])` );
-					assert.true( rDisableRule.test( invalidFixtures ), `Rule '${rule}' is covered in invalid fixture` );
-				}
-			} );
+			const invalidFixtures = invalidFixturesFiltered.map( ( file ) =>
+				fs.readFileSync( file ).toString()
+			).join( '' );
 
-			done();
+			QUnit.test( `Rules are covered in invalid fixture (${ext})`, ( assert ) => {
+				const done = assert.async();
+
+				stylelint.resolveConfig( fixturesDir + '/invalid' + ext ).then( ( config ) => {
+
+					const rules = config.rules;
+
+					function isEnabled( rule ) {
+						return rules[ rule ] !== null;
+					}
+
+					Object.keys( rules ).forEach( ( rule ) => {
+						const ruleValueIndex = rule + JSON.stringify( rules[ rule ] );
+						if ( isEnabled( rule ) && !tested[ ruleValueIndex ] ) {
+							const rDisableRule = new RegExp( `(/[/*]|<!--|#) (skip-)?stylelint-disable((-next)?-line)? ([a-z-/]+, ?)*?${rule}($|[^a-z-])` );
+							assert.true( rDisableRule.test( invalidFixtures ), `Rule '${rule}' is covered in invalid fixture` );
+							tested[ ruleValueIndex ] = true;
+						}
+					} );
+
+					done();
+				} );
+			} );
 		} );
 	} );
 } );
