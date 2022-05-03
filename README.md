@@ -36,7 +36,7 @@ If you would also like to enable rules to disallow CSS which is unsupported by m
 }
 ```
 
-If you are using in a MediaWiki environment, you can use add the following config:
+If you are using in a MediaWiki environment, you can add the following config:
 
 ```json
 {
