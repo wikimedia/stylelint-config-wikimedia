@@ -22,7 +22,7 @@ div {
 	color: #fff;
 }
 
-/* stylelint-disable-next-line at-rule-disallowed-list, at-rule-semicolon-newline-after, no-invalid-position-at-import-rule, no-duplicate-at-import-rules */
+/* stylelint-disable-next-line at-rule-semicolon-newline-after, no-invalid-position-at-import-rule, no-duplicate-at-import-rules */
 @import url( x.css ); @import url( x.css );
 
 span {

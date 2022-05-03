@@ -29,6 +29,7 @@
 		"CHANGELOG.md",
 		"LICENSE",
 		"index.js",
+		"mediawiki.js",
 		"grade-a.json",
 		"grade-c.json",
 		"support-modern.js",

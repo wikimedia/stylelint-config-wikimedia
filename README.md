@@ -36,6 +36,27 @@ If you would also like to enable rules to disallow CSS which is unsupported by m
 }
 ```
 
+If you are using in a MediaWiki environment, you can use add the following config:
+
+```json
+{
+	"extends": [
+		"stylelint-config-wikimedia",
+		"stylelint-config-wikimedia/mediawiki"
+	]
+}
+```
+
+If you need to combine this with browser support rules:
+
+```json
+{
+	"extends": [
+		"stylelint-config-wikimedia/support-modern",
+		"stylelint-config-wikimedia/mediawiki"
+	]
+}
+```
 
 ### Extend or override the configuration
 Add a `"rules"` object to your config file, and add your overrides or additional rules there, for example:
