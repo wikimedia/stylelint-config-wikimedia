@@ -1,0 +1,6 @@
+{
+	"extends": [
+		"./index",
+		"./support-modern-rules"
+	]
+}

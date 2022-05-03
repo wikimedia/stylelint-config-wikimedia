@@ -32,8 +32,10 @@
 		"mediawiki.js",
 		"grade-a.json",
 		"grade-c.json",
-		"support-modern.js",
-		"support-basic.js",
+		"support-modern.json",
+		"support-basic.json",
+		"support-modern-rules.js",
+		"support-basic-rules.js",
 		"rules/"
 	],
 	"devDependencies": {
