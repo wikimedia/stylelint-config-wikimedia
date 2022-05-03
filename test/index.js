@@ -24,7 +24,7 @@ QUnit.module( 'package.json', () => {
 	} );
 } );
 
-[ 'default', 'mediawiki' ].forEach( ( configName ) => {
+[ 'default', 'mediawiki', 'basic', 'modern' ].forEach( ( configName ) => {
 	QUnit.module( `${configName} config`, () => {
 		const fixturesDir = path.resolve( __dirname, `fixtures/${configName}` );
 		const fixturesFiles = fs.readdirSync( fixturesDir )

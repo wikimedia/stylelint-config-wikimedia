@@ -5,14 +5,13 @@ module.exports = {
 	"plugins": [
 		"stylelint-no-unsupported-browser-features"
 	],
-	"extends": "./index",
 	"rules": {
 		"plugin/no-unsupported-browser-features": [ true, {
-			"browsers": require( 'browserslist-config-wikimedia/basic' ),
+			"browsers": require( 'browserslist-config-wikimedia/modern' ),
 			"severity": "warning",
 			"ignorePartialSupport": true
 		} ],
-		// Must remain enabled as long as some of our "basic" browsers don't support https://caniuse.com/css-not-sel-list
+		// Must remain enabled as long as some of our "modern" browsers don't support https://caniuse.com/css-not-sel-list
 		"selector-not-notation": "simple"
 	}
 };
