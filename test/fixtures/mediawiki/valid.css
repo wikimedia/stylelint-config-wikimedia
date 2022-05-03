@@ -1,0 +1,9 @@
+/* Valid: selector-class-pattern */
+.ext-foo-name,
+.mw-bar-thing,
+.oo-ui-buttonElement,
+.cdx-widget,
+.client-js,
+.skin-vector {
+	width: 1px;
+}

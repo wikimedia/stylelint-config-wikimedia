@@ -14,6 +14,5 @@ module.exports = {
 		} ],
 		// Must remain enabled as long as some of our "basic" browsers don't support https://caniuse.com/css-not-sel-list
 		"selector-not-notation": "simple"
-
 	}
 };
