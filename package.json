@@ -30,8 +30,6 @@
 		"LICENSE",
 		"index.js",
 		"mediawiki.js",
-		"grade-a.json",
-		"grade-c.json",
 		"support-modern.json",
 		"support-basic.json",
 		"support-modern-rules.js",
