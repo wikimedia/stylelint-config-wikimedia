@@ -31,21 +31,27 @@ QUnit.module( 'package.json', () => {
 			.map( ( file ) => path.resolve( fixturesDir, file ) );
 
 		const invalidFixturesFiles = fixturesFiles.filter( ( file ) => file.includes( '/invalid' ) );
+		const validFixturesFiles = fixturesFiles.filter( ( file ) => file.includes( '/valid' ) );
 		const tested = {};
 
 		[ '.css', '.less' ].forEach( ( ext ) => {
 			const invalidFixturesFiltered = invalidFixturesFiles
 				.filter( ( file ) => path.extname( file ) === ext );
+			const validFixturesFiltered = validFixturesFiles
+				.filter( ( file ) => path.extname( file ) === ext );
 
-			if ( !invalidFixturesFiltered.length ) {
+			if ( !invalidFixturesFiltered.length && !validFixturesFiltered.length ) {
 				return;
 			}
 
 			const invalidFixtures = invalidFixturesFiltered.map( ( file ) =>
 				fs.readFileSync( file ).toString()
 			).join( '' );
+			const validFixtures = validFixturesFiltered.map( ( file ) =>
+				fs.readFileSync( file ).toString()
+			).join( '' );
 
-			QUnit.test( `Rules are covered in invalid fixture (${ext})`, ( assert ) => {
+			QUnit.test( `Rules are covered in ${ext}`, ( assert ) => {
 				const done = assert.async();
 
 				stylelint.resolveConfig( fixturesDir + '/invalid' + ext ).then( ( config ) => {
@@ -58,10 +64,20 @@ QUnit.module( 'package.json', () => {
 
 					Object.keys( rules ).forEach( ( rule ) => {
 						const ruleValueIndex = rule + JSON.stringify( rules[ rule ] );
+						// Disabled rules are covered later
 						if ( isEnabled( rule ) && !tested[ ruleValueIndex ] ) {
 							const rDisableRule = new RegExp( `(/[/*]|<!--|#) (skip-)?stylelint-disable((-next)?-line)? ([a-z-/]+, ?)*?${rule}($|[^a-z-])` );
 							assert.true( rDisableRule.test( invalidFixtures ), `Rule '${rule}' is covered in invalid fixture` );
 							tested[ ruleValueIndex ] = true;
+						}
+					} );
+
+					Object.keys( rules ).forEach( ( rule ) => {
+						const rEnableRule = new RegExp( `Off: ${rule}($|[^a-z-])` );
+						if ( !isEnabled( rule ) ) {
+							assert.true( rEnableRule.test( validFixtures ), `Rule '${rule}' is covered as "off" in valid fixture` );
+						} else {
+							assert.true( !rEnableRule.test( validFixtures ), `Rule '${rule}' is not covered as "off" in valid fixture` );
 						}
 					} );
 
