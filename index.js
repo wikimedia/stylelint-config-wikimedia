@@ -161,5 +161,13 @@ module.exports = {
 		"value-list-comma-newline-before": "never-multi-line",
 		"value-list-comma-space-after": "always-single-line",
 		"value-list-comma-space-before": "never"
-	}
+	},
+	"overrides": [ {
+		"files": [ "**/*.less" ],
+		"customSyntax": "postcss-less",
+		"rules": {
+			// LESS functions are not supported by this rule
+			"function-no-unknown": null
+		}
+	} ]
 };
