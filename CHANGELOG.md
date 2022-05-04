@@ -1,5 +1,30 @@
 # Changelog
 
+## 0.13.0 / 2022-04-29
+* Require stylelint 14.8.1, up from 14.2.0 (Ed Sanders)
+* profiles: Remove 'grade-a' and 'grade-c' deprecated aliases for 'support-modern' and 'support-basic' (Ed Sanders)
+* New rule: `function-no-unknown` (Ed Sanders)
+* New rule: `selector-not-notation` (Ed Sanders)
+* New rules from extending stylelint-config-recommended: (Ed Sanders)
+** `custom-property-no-missing-var-function`
+** `declaration-block-no-duplicate-custom-properties`
+** `font-family-no-duplicate-names`
+** `keyframe-declaration-no-important`
+** `named-grid-areas-no-invalid`
+** `no-duplicate-at-import-rules`
+** `no-empty-source`
+** `no-invalid-position-at-import-rule`
+** `no-irregular-whitespace`
+** `selector-pseudo-element-no-unknown`
+* Changed rule: `declaration-block-no-duplicate-properties`, from `ignore:consecutive-duplicates` to `ignore:consecutive-duplicates-with-different-values`. (Ed Sanders)
+* Changed rule: `no-invalid-position-at-import-rule`, disable in LESS files (Ed Sanders)
+* Changed rule: `font-family-no-duplicate-names`, allow 'monospace, monospace' hack (Ed Sanders)
+* Changed rule: `function-name-case`: Remove exception for 'DXImageTransform.Microsoft' (Ed Sanders)
+* profiles: Introduce 'mediawiki' config (Ed Sanders)
+* mediawiki profile: New rule: `selector-class-pattern`, to prevent use of overly-generic class names without prefixes (James D. Forrester)
+* mediawiki profile: New rule: `at-rule-disallowed-list`, disallowing @import outside of LESS files (Ed Sanders)
+* mediawiki profile: New rule: `wikimedia/no-at-import-css` for LESS files, blocking unsupported @import at-rules (Ed Sanders)
+
 ## 0.12.2 / 2022-02-22
 * Add postcss-less as a peerDependency too (James D. Forrester)
 
