@@ -167,7 +167,9 @@ module.exports = {
 		"customSyntax": "postcss-less",
 		"rules": {
 			// LESS functions are not supported by this rule
-			"function-no-unknown": null
+			"function-no-unknown": null,
+			// LESS imports can go anywhere
+			"no-invalid-position-at-import-rule": null
 		}
 	} ]
 };
