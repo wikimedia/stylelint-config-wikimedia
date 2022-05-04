@@ -52,13 +52,10 @@ module.exports = stylelint.createPlugin(
 				// The (less) keyword can be used to override the above rules.
 				if (
 					path.extname( filename ).toLowerCase() === '.css' &&
-					!( atRule.options && atRule.options.includes( 'less' ) )
+					!( atRule.options && atRule.options.includes( 'less' ) ) &&
+					!( atRule.options && atRule.options.includes( 'inline' ) )
 				) {
 					message = 'Files with a .css extension are not handled by LESS.';
-				}
-
-				if ( atRule.options && atRule.options.includes( 'inline' ) ) {
-					message = '@import with the (inline) keyword is not handled by LESS.';
 				}
 
 				if ( !message ) {
