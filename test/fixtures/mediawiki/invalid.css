@@ -5,3 +5,8 @@
 .generic-name {
 	width: 1px;
 }
+
+/* stylelint-disable-next-line selector-class-pattern */
+.not-mw-prefixed {
+	width: 1px;
+}
