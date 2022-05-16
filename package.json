@@ -23,7 +23,7 @@
 		"test": "qunit && npm run lint",
 		"lint": "npm run lint:eslint && npm run lint:stylelint",
 		"lint:eslint": "eslint --cache --max-warnings 0 .",
-		"lint:stylelint": "stylelint --report-needless-disables test/fixtures/"
+		"lint:stylelint": "stylelint test/fixtures/"
 	},
 	"files": [
 		"CHANGELOG.md",
