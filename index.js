@@ -5,6 +5,7 @@
 /* eslint quote-props: ["error", "always"] */
 module.exports = {
 	"extends": "stylelint-config-recommended",
+	"reportNeedlessDisables": true,
 	"rules": {
 		// Wikimedia Foundation ♡ whitespace in its own special way
 		// See also https://www.mediawiki.org/wiki/Manual:Coding_conventions/CSS#Whitespace
