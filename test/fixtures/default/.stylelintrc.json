@@ -1,3 +1,13 @@
 {
-	"extends": "../../../index"
+	"extends": "../../../index",
+	"overrides": [
+		{
+			"files": [ "**/*.vue" ],
+			"customSyntax": "postcss-less"
+		},
+		{
+			"files": [ "**/*.vue" ],
+			"customSyntax": "postcss-html"
+		}
+	]
 }

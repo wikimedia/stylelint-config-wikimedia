@@ -162,14 +162,25 @@ module.exports = {
 		"value-list-comma-space-after": "always-single-line",
 		"value-list-comma-space-before": "never"
 	},
-	"overrides": [ {
-		"files": [ "**/*.less" ],
-		"customSyntax": "postcss-less",
-		"rules": {
-			// LESS functions are not supported by this rule
-			"function-no-unknown": null,
-			// LESS imports can go anywhere
-			"no-invalid-position-at-import-rule": null
+	"overrides": [
+		{
+			"files": [ "**/*.less" ],
+			"customSyntax": "postcss-less",
+			"rules": {
+				// LESS functions are not supported by this rule
+				"function-no-unknown": null,
+				// LESS imports can go anywhere
+				"no-invalid-position-at-import-rule": null
+			}
+		},
+		// Vue support requires special over-rides for a customSyntax; note that these don't inherit
+		{
+			"files": [ "**/*.vue" ],
+			"customSyntax": "postcss-less"
+		},
+		{
+			"files": [ "**/*.vue" ],
+			"customSyntax": "postcss-html"
 		}
-	} ]
+	]
 };
