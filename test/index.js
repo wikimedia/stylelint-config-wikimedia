@@ -34,7 +34,7 @@ QUnit.module( 'package.json', () => {
 		const validFixturesFiles = fixturesFiles.filter( ( file ) => file.includes( '/valid' ) );
 		const tested = {};
 
-		[ '.css', '.less' ].forEach( ( ext ) => {
+		[ '.css', '.less', '.vue' ].forEach( ( ext ) => {
 			const invalidFixturesFiltered = invalidFixturesFiles
 				.filter( ( file ) => path.extname( file ) === ext );
 			const validFixturesFiltered = validFixturesFiles
