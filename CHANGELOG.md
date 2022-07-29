@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.13.1 / 2022-07-29
+* Add back support for linting `.vue` files (James D. Forrester)
+* Add `reportNeedlessDisables` to main config (Ed Sanders)
+* Rule fix: Ensure `selector-class-pattern` is a prefix (Ed Sanders)
+* Tests: Assert disabled rules (Ed Sanders)
+
 ## 0.13.0 / 2022-04-29
 * Require stylelint 14.8.1, up from 14.2.0 (Ed Sanders)
 * profiles: Remove 'grade-a' and 'grade-c' deprecated aliases for 'support-modern' and 'support-basic' (Ed Sanders)
