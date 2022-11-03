@@ -169,6 +169,17 @@ span {
 	/* ... */
 }
 
+@keyframes foo {
+	/* stylelint-disable-next-line block-no-empty */
+	0% {
+
+	}
+	/* stylelint-disable-next-line keyframe-block-no-duplicate-selectors, block-no-empty */
+	0% {
+
+	}
+}
+
 .a .k {
 	/* stylelint-disable-next-line named-grid-areas-no-invalid */
 	grid-template-areas: '';
