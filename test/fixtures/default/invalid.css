@@ -204,6 +204,7 @@ span {
 	Background: #000;
 }
 .l { /* stylelint-disable-line rule-empty-line-before */
+	/* ... */
 }
 
 /* stylelint-disable-next-line selector-attribute-brackets-space-inside, selector-attribute-operator-space-after, selector-attribute-operator-space-before, selector-attribute-quotes */
@@ -265,6 +266,11 @@ unknown {
 	font-family: serif ,sans-serif;
 	font-family: serif
 		, sans-serif; /* stylelint-disable-line value-list-comma-newline-after, value-list-comma-newline-before, value-list-comma-space-before */
+}
+
+.v {
+	/* stylelint-disable-next-line annotation-no-unknown */
+	color: #000 !imprtant;
 }
 
 .last {
