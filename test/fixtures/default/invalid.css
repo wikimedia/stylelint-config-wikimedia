@@ -234,7 +234,7 @@ span {
 }
 
 /* stylelint-disable-next-line selector-pseudo-class-case, selector-pseudo-class-no-unknown, selector-pseudo-class-parentheses-space-inside, selector-pseudo-element-case, selector-pseudo-element-colon-notation, selector-pseudo-element-no-unknown */
-.t:HOVER:unknown:not(.a)::BEFORE::pseudo {
+.t:HOVER:unknown:not(.a):BEFORE::pseudo {
 	/* ... */
 }
 

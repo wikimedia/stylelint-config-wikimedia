@@ -143,7 +143,7 @@ module.exports = {
 		"selector-pseudo-class-case": "lower",
 		"selector-pseudo-class-parentheses-space-inside": "always",
 		"selector-pseudo-element-case": "lower",
-		"selector-pseudo-element-colon-notation": "single",
+		"selector-pseudo-element-colon-notation": "double",
 		"selector-type-case": "lower",
 		"selector-type-no-unknown": true,
 
