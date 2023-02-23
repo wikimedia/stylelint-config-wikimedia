@@ -1,6 +1,6 @@
 {
 	"name": "stylelint-config-wikimedia",
-	"version": "0.13.1",
+	"version": "0.14.0",
 	"description": "Wikimedia shareable config for stylelint",
 	"keywords": [
 		"code",
@@ -47,7 +47,7 @@
 		"postcss-html": "1.5.0",
 		"stylelint": "14.16.1",
 		"stylelint-config-recommended": "9.0.0",
-		"stylelint-no-unsupported-browser-features": "6.0.1"
+		"stylelint-no-unsupported-browser-features": "6.1.0"
 	},
 	"peerDependencies": {
 		"postcss-less": "^6.0.0"
