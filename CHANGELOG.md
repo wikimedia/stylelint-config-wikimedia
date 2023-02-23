@@ -1,5 +1,20 @@
 # Changelog
 
+## 0.14.0 / 2023-02-23
+* Changed rule: selector-pseudo-element-colon-notation: Expect double colon notation not single (Volker-E)
+
+—
+* Upgrade styelint-no-unsupported-browser-features from 6.0.1 to 6.1.0 (James D. Forrester)
+* Upgrade stylelint from 14.8.1 to 14.9.1 (#192) (James D. Forrester)
+
+—
+* packaging: Add 'Less' to package keywords (Volker E)
+* build: Drop Node.js version 12.x and update to '14.x, 16.x' (Volker-E)
+* build: Update 'stylelint' and dependencies to latest (Volker-E)
+* build: Upgrade and pin qunit from ^2.19.0 to 2.19.4 (James D. Forrester)
+* build: Upgrade eslint-config-wikimedia from 0.22.1 to 0.24.0 (James D. Forrester)
+
+
 ## 0.13.1 / 2022-07-29
 * Add back support for linting `.vue` files (James D. Forrester)
 * Add `reportNeedlessDisables` to main config (Ed Sanders)
