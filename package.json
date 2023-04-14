@@ -24,7 +24,7 @@
 		"test": "qunit && npm run lint",
 		"lint": "npm run lint:eslint && npm run lint:stylelint",
 		"lint:eslint": "eslint --cache --max-warnings 0 .",
-		"lint:stylelint": "stylelint test/fixtures/"
+		"lint:stylelint": "stylelint --report-needless-disables test/fixtures/"
 	},
 	"files": [
 		"CHANGELOG.md",
@@ -42,7 +42,7 @@
 		"qunit": "2.19.4"
 	},
 	"dependencies": {
-		"browserslist-config-wikimedia": "0.4.0",
+		"browserslist-config-wikimedia": "0.5.0",
 		"postcss-less": "6.0.0",
 		"postcss-html": "1.5.0",
 		"stylelint": "14.16.1",
