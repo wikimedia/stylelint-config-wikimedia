@@ -14,7 +14,7 @@ module.exports = {
 			"files": [ "**/*.less" ],
 			"customSyntax": "postcss-less",
 			"rules": {
-			// MediaWiki will only support @import in LESS files
+				// MediaWiki will only support @import in LESS files
 				"at-rule-disallowed-list": null,
 				// Don't allow CSS imports
 				"wikimedia/no-at-import-css": true
@@ -22,7 +22,13 @@ module.exports = {
 		},
 		{
 			"files": [ "**/*.vue" ],
-			"customSyntax": "postcss-less"
+			"customSyntax": "postcss-less",
+			"rules": {
+				// MediaWiki will only support @import in LESS files
+				"at-rule-disallowed-list": null,
+				// Don't allow CSS imports
+				"wikimedia/no-at-import-css": true
+			}
 		},
 		{
 			"files": [ "**/*.vue" ],
