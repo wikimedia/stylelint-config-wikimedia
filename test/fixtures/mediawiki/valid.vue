@@ -6,5 +6,6 @@
 </script>
 
 <style>
-	/* This comment is here to prevent no-empty-source errors */
+	/* Off: at-rule-disallowed-list */
+	@import 'lookMaICanImportHere.less';
 </style>
