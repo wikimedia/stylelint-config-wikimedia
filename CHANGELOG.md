@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.15.0 / 2023-05-29
+* mediawiki: Allow @import in Less in .vue files too (Roan Kattouw)
+* modern: Update browserslist-config-wikimedia to 0.5.0 (Ed Sanders)
+
 ## 0.14.0 / 2023-02-23
 * Changed rule: selector-pseudo-element-colon-notation: Expect double colon notation not single (Volker-E)
 
