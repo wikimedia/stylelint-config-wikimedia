@@ -27,6 +27,7 @@ QUnit.module( 'package.json', () => {
 [ 'default', 'mediawiki', 'basic', 'modern' ].forEach( ( configName ) => {
 	QUnit.module( `${configName} config`, () => {
 		const fixturesDir = path.resolve( __dirname, `fixtures/${configName}` );
+		// eslint-disable-next-line security/detect-non-literal-fs-filename
 		const fixturesFiles = fs.readdirSync( fixturesDir )
 			.map( ( file ) => path.resolve( fixturesDir, file ) );
 
@@ -45,9 +46,11 @@ QUnit.module( 'package.json', () => {
 			}
 
 			const invalidFixtures = invalidFixturesFiltered.map( ( file ) =>
+				// eslint-disable-next-line security/detect-non-literal-fs-filename
 				fs.readFileSync( file ).toString()
 			).join( '' );
 			const validFixtures = validFixturesFiltered.map( ( file ) =>
+				// eslint-disable-next-line security/detect-non-literal-fs-filename
 				fs.readFileSync( file ).toString()
 			).join( '' );
 
@@ -66,6 +69,7 @@ QUnit.module( 'package.json', () => {
 						const ruleValueIndex = rule + JSON.stringify( rules[ rule ] );
 						// Disabled rules are covered later
 						if ( isEnabled( rule ) && !tested[ ruleValueIndex ] ) {
+							// eslint-disable-next-line security/detect-non-literal-regexp
 							const rDisableRule = new RegExp( `(/[/*]|<!--|#) (skip-)?stylelint-disable((-next)?-line)? ([a-z-/]+, ?)*?${rule}($|[^a-z-])` );
 							assert.true( rDisableRule.test( invalidFixtures ), `Rule '${rule}' is covered in invalid fixture` );
 							tested[ ruleValueIndex ] = true;
@@ -73,6 +77,7 @@ QUnit.module( 'package.json', () => {
 					} );
 
 					Object.keys( rules ).forEach( ( rule ) => {
+						// eslint-disable-next-line security/detect-non-literal-regexp
 						const rEnableRule = new RegExp( `Off: ${rule}($|[^a-z-])` );
 						if ( !isEnabled( rule ) ) {
 							assert.true( rEnableRule.test( validFixtures ), `Rule '${rule}' is covered as "off" in valid fixture` );
