@@ -106,6 +106,8 @@ span {
 	border: none;
 	/* stylelint-disable-next-line declaration-property-value-disallowed-list */
 	outline: none;
+	/* stylelint-disable-next-line declaration-property-value-disallowed-list */
+	text-transform: capitalize;
 	/* stylelint-disable-next-line font-family-name-quotes, font-family-no-duplicate-names, font-family-no-missing-generic-family-keyword */
 	font-family: Times New Roman, Times New Roman;
 	/* stylelint-disable-next-line font-weight-notation */
