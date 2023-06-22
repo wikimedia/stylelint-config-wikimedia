@@ -72,7 +72,8 @@ module.exports = {
 		},
 		"declaration-property-value-disallowed-list": {
 			"/^border/": "none",
-			"/^outline/": "none"
+			"/^outline/": "none",
+			"text-transform": "capitalize"
 		},
 
 		"font-family-name-quotes": "always-unless-keyword",
