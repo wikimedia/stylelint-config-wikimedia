@@ -73,7 +73,7 @@ module.exports = {
 		"declaration-property-value-disallowed-list": {
 			"/^border/": "none",
 			"/^outline/": "none",
-			"text-transform": "capitalize"
+			"text-transform": [ "capitalize", "uppercase", "lowercase" ]
 		},
 
 		"font-family-name-quotes": "always-unless-keyword",

@@ -1,4 +1,7 @@
 div {
 	/* Valid: font-family-no-duplicate-names's ignoreFontFamilyNames option */
 	font-family: monospace, monospace;
+
+	/* Valid: declaration-property-value-disallowed-list's text-transform entry allows the 'none' value */
+	text-transform: none;
 }
