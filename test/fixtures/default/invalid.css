@@ -256,7 +256,7 @@ unknown {
 	b";
 	/* stylelint-disable-next-line time-min-milliseconds */
 	animation: 80ms;
-	/* stylelint-disable-next-line unit-disallowed-list, unit-case */
+	/* stylelint-disable-next-line unit-case */
 	top: 1REM;
 	/* stylelint-disable-next-line value-keyword-case */
 	display: BLOCK;
