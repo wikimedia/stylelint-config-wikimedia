@@ -152,7 +152,6 @@ module.exports = {
 
 		"time-min-milliseconds": 100,
 
-		"unit-disallowed-list": "rem",
 		"unit-case": "lower",
 
 		"value-keyword-case": "lower",
