@@ -4,7 +4,8 @@ div {
 	position: sticky;
 }
 
-/* stylelint-disable-next-line selector-not-notation */
+/* Not supported by IE 11, Chrome/Edge/Opera/etc. <=87. */
+/* stylelint-disable-next-line selector-not-notation, plugin/no-unsupported-browser-features */
 div:not( .a, .b ) {
 	/* ... */
 }

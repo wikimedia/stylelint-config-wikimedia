@@ -4,7 +4,7 @@ div {
 	image-orientation: none;
 }
 
-/* stylelint-disable-next-line selector-not-notation */
+/* stylelint-disable-next-line selector-not-notation, plugin/no-unsupported-browser-features */
 div:not( .a, .b ) {
 	/* ... */
 }
