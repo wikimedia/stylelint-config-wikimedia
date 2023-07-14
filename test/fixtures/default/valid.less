@@ -1,6 +1,14 @@
 div {
 	// Off: function-no-unknown
 	color: lighten( #fc0, 50% );
+
+	// Off: stylistic/max-line-length
+	content: 'hello this is a very silly, indeed ludicrously long line of text that would get set as the content block for something mostly to test out the line length';
+}
+
+/* Off: media-query-no-invalid */
+@media ( width = 100px ) {
+	/* This comment is here to prevent no-empty-source errors */
 }
 
 // Off: no-invalid-position-at-import-rule
