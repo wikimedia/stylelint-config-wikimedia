@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.16.0 / 2023-05-29
+* New rule: Disallow `text-transform: capitalize`  (Jon Harald Søby)
+* Dropped rule: `unit-disallowed-list`, allow `rem` units from now on (James D. Forrester)
+
+—
+* Upgrade stylelint from 14.16.1 to 15.10.1 (James D. Forrester)
+
+—
+* build: Drop Node.js version 14.x and update to '16.x, 18.x' (James D. Forrester)
+
 ## 0.15.0 / 2023-05-29
 * mediawiki: Allow @import in Less in .vue files too (Roan Kattouw)
 * modern: Update browserslist-config-wikimedia to 0.5.0 (Ed Sanders)
