@@ -1,6 +1,4 @@
 /* Valid: selector-not-notation */
-/* Not supported by Chrome <= 55 and Opera <= 41. */
-/* stylelint-disable-next-line plugin/no-unsupported-browser-features */
 div:not( .a ),
 div:not( .b ) {
 	/* ... */

@@ -5,7 +5,7 @@ div {
 }
 
 /* Not supported by IE 11, Chrome/Edge/Opera/etc. <=87. */
-/* stylelint-disable-next-line selector-not-notation, plugin/no-unsupported-browser-features */
+/* stylelint-disable-next-line selector-not-notation */
 div:not( .a, .b ) {
 	/* ... */
 }
