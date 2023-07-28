@@ -47,7 +47,7 @@
 		"postcss-html": "1.5.0",
 		"stylelint": "15.10.1",
 		"stylelint-config-recommended": "13.0.0",
-		"stylelint-no-unsupported-browser-features": "7.0.0",
+		"stylelint-no-unsupported-browser-features": "6.1.0",
 		"stylelint-stylistic": "0.4.3"
 	},
 	"peerDependencies": {

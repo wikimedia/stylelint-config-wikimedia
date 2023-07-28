@@ -1,5 +1,4 @@
 /* Valid: selector-not-notation */
-/* stylelint-disable-next-line plugin/no-unsupported-browser-features */
 div:not( .a ),
 div:not( .b ) {
 	/* ... */
