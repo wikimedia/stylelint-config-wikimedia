@@ -54,6 +54,10 @@ QUnit.module( 'package.json', () => {
 				fs.readFileSync( file ).toString()
 			).join( '' );
 
+			QUnit.test( `Valid ${ext} fixtures contain no disables`, ( assert ) => {
+				assert.false( validFixtures.includes( 'stylelint-disable' ), `No disables found in valid ${ext} fixtures` );
+			} );
+
 			QUnit.test( `Rules are covered in ${ext}`, ( assert ) => {
 				const done = assert.async();
 
