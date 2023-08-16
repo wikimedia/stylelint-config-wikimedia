@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.16.1 / 2023-08-16
+* Changed rule: `declaration-block-no-redundant-longhand-properties`, don't suggest the 'inset' shorthand for top/right/bottom/left (Ed Sanders)
+
+—
+* Downgrade stylelint-no-unsupported-browser-features to 6.1.0 (Ed Sanders)
+
+—
+* Avoid variables named with Hungarian notation (Ed Sanders)
+* Assert that valid fixtures contain no disables (Ed Sanders)
+
 ## 0.16.0 / 2023-05-29
 * New rule: Disallow `text-transform: capitalize`  (Jon Harald Søby)
 * Dropped rule: `unit-disallowed-list`, allow `rem` units from now on (James D. Forrester)
