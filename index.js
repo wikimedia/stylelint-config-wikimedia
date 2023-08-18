@@ -50,7 +50,9 @@ module.exports = {
 		"stylistic/declaration-bang-space-after": "never",
 		"stylistic/declaration-bang-space-before": "always",
 
-		"declaration-block-no-redundant-longhand-properties": true,
+		"declaration-block-no-redundant-longhand-properties": [ true, {
+			"ignoreShorthands": [ "inset" ]
+		} ],
 		"stylistic/declaration-block-semicolon-newline-after": "always",
 		"stylistic/declaration-block-semicolon-newline-before": "never-multi-line",
 		"stylistic/declaration-block-semicolon-space-after": "always-single-line",

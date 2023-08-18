@@ -10,3 +10,11 @@ div {
 		/* This comment is here to prevent no-empty-source errors */
 	}
 }
+
+.a {
+	/* Valid declaration-block-no-redundant-longhand-properties's ignoreShorthands "inset" option */
+	top: 1px;
+	right: 2px;
+	bottom: 3px;
+	left: 4px;
+}
