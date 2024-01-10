@@ -38,8 +38,8 @@
 		"rules/"
 	],
 	"devDependencies": {
-		"eslint-config-wikimedia": "0.25.1",
-		"qunit": "2.19.4"
+		"eslint-config-wikimedia": "0.26.0",
+		"qunit": "2.20.0"
 	},
 	"dependencies": {
 		"browserslist-config-wikimedia": "0.5.0",

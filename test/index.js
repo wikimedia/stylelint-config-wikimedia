@@ -18,15 +18,15 @@ QUnit.module( 'package.json', () => {
 				( ext === '.js' || ext === '.json' ) &&
 				!excludeList.includes( file )
 			) {
-				assert.true( configs.includes( file ), `'${file}' found in package.json's 'files' list` );
+				assert.true( configs.includes( file ), `'${ file }' found in package.json's 'files' list` );
 			}
 		} );
 	} );
 } );
 
 [ 'default', 'mediawiki', 'basic', 'modern' ].forEach( ( configName ) => {
-	QUnit.module( `${configName} config`, () => {
-		const fixturesDir = path.resolve( __dirname, `fixtures/${configName}` );
+	QUnit.module( `${ configName } config`, () => {
+		const fixturesDir = path.resolve( __dirname, `fixtures/${ configName }` );
 		// eslint-disable-next-line security/detect-non-literal-fs-filename
 		const fixturesFiles = fs.readdirSync( fixturesDir )
 			.map( ( file ) => path.resolve( fixturesDir, file ) );
@@ -54,11 +54,11 @@ QUnit.module( 'package.json', () => {
 				fs.readFileSync( file ).toString()
 			).join( '' );
 
-			QUnit.test( `Valid ${ext} fixtures contain no disables`, ( assert ) => {
-				assert.false( validFixtures.includes( 'stylelint-disable' ), `No disables found in valid ${ext} fixtures` );
+			QUnit.test( `Valid ${ ext } fixtures contain no disables`, ( assert ) => {
+				assert.false( validFixtures.includes( 'stylelint-disable' ), `No disables found in valid ${ ext } fixtures` );
 			} );
 
-			QUnit.test( `Rules are covered in ${ext}`, ( assert ) => {
+			QUnit.test( `Rules are covered in ${ ext }`, ( assert ) => {
 				const done = assert.async();
 
 				stylelint.resolveConfig( fixturesDir + '/invalid' + ext ).then( ( config ) => {
@@ -74,19 +74,19 @@ QUnit.module( 'package.json', () => {
 						// Disabled rules are covered later
 						if ( isEnabled( rule ) && !tested[ ruleValueIndex ] ) {
 							// eslint-disable-next-line security/detect-non-literal-regexp
-							const disableRulePattern = new RegExp( `(/[/*]|<!--|#) (skip-)?stylelint-disable((-next)?-line)? ([a-z-/]+, ?)*?${rule}($|[^a-z-])` );
-							assert.true( disableRulePattern.test( invalidFixtures ), `Rule '${rule}' is covered in invalid fixture` );
+							const disableRulePattern = new RegExp( `(/[/*]|<!--|#) (skip-)?stylelint-disable((-next)?-line)? ([a-z-/]+, ?)*?${ rule }($|[^a-z-])` );
+							assert.true( disableRulePattern.test( invalidFixtures ), `Rule '${ rule }' is covered in invalid fixture` );
 							tested[ ruleValueIndex ] = true;
 						}
 					} );
 
 					Object.keys( rules ).forEach( ( rule ) => {
 						// eslint-disable-next-line security/detect-non-literal-regexp
-						const enableRulePattern = new RegExp( `Off: ${rule}($|[^a-z-])` );
+						const enableRulePattern = new RegExp( `Off: ${ rule }($|[^a-z-])` );
 						if ( !isEnabled( rule ) ) {
-							assert.true( enableRulePattern.test( validFixtures ), `Rule '${rule}' is covered as "off" in valid fixture` );
+							assert.true( enableRulePattern.test( validFixtures ), `Rule '${ rule }' is covered as "off" in valid fixture` );
 						} else {
-							assert.true( !enableRulePattern.test( validFixtures ), `Rule '${rule}' is not covered as "off" in valid fixture` );
+							assert.true( !enableRulePattern.test( validFixtures ), `Rule '${ rule }' is not covered as "off" in valid fixture` );
 						}
 					} );
 
