@@ -64,7 +64,7 @@ Add a `"rules"` object to your config file, and add your overrides or additional
 {
 	"extends": "stylelint-config-wikimedia/support-basic",
 	"rules": {
-		"stylistic/max-empty-lines": null
+		"@stylistic/max-empty-lines": null
 	}
 }
 ```
