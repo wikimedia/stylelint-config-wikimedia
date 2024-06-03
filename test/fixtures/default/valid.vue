@@ -7,7 +7,7 @@
 
 <style>
 	a {
-		/* Off: stylistic/max-line-length */
+		/* Off: @stylistic/max-line-length */
 		content: 'hello this is a very silly, indeed ludicrously long line of text that would get set as the content block for something mostly to test out the line length';
 	}
 

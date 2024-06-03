@@ -74,7 +74,7 @@ QUnit.module( 'package.json', () => {
 						// Disabled rules are covered later
 						if ( isEnabled( rule ) && !tested[ ruleValueIndex ] ) {
 							// eslint-disable-next-line security/detect-non-literal-regexp
-							const disableRulePattern = new RegExp( `(/[/*]|<!--|#) (skip-)?stylelint-disable((-next)?-line)? ([a-z-/]+, ?)*?${ rule }($|[^a-z-])` );
+							const disableRulePattern = new RegExp( `(/[/*]|<!--|#) (skip-)?stylelint-disable((-next)?-line)? ([a-z-/@]+, ?)*?${ rule }($|[^a-z-/])` );
 							assert.true( disableRulePattern.test( invalidFixtures ), `Rule '${ rule }' is covered in invalid fixture` );
 							tested[ ruleValueIndex ] = true;
 						}
