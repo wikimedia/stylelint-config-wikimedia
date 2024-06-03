@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.17.0 / 2024-06-03
+* Upgrade to Stylelint 16 (James D. Forrester, Volker E)
+
+—
+
+* Upgrade browserslist-config-wikimedia from 0.5.0 to 0.7.0 (James D. Forrester)
+* Upgrade postcss-html from 1.5.0 to 1.6.0 (James D. Forrester)
+
+* build: Upgrade qunit from 2.19.4 to 2.20.1 (James D. Forrester)
+* build: Upgrade eslint-config-wikimedia from 0.25.1 to 0.27.0 (James D. Forrester)
+
 ## 0.16.1 / 2023-08-16
 * Changed rule: `declaration-block-no-redundant-longhand-properties`, don't suggest the 'inset' shorthand for top/right/bottom/left (Ed Sanders)
 
