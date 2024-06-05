@@ -1,0 +1,10 @@
+div {
+	/* Not supported by Safari <=13 */
+	/* stylelint-disable-next-line plugin/no-unsupported-browser-features */
+	image-orientation: none;
+}
+
+/* stylelint-disable-next-line selector-not-notation */
+div:not( .a, .b ) {
+	/* ... */
+}
