@@ -45,13 +45,13 @@ QUnit.module( 'package.json', () => {
 				return;
 			}
 
-			const invalidFixtures = invalidFixturesFiltered.map( ( file ) =>
+			const invalidFixtures = invalidFixturesFiltered.map(
 				// eslint-disable-next-line security/detect-non-literal-fs-filename
-				fs.readFileSync( file ).toString()
+				( file ) => fs.readFileSync( file ).toString()
 			).join( '' );
-			const validFixtures = validFixturesFiltered.map( ( file ) =>
+			const validFixtures = validFixturesFiltered.map(
 				// eslint-disable-next-line security/detect-non-literal-fs-filename
-				fs.readFileSync( file ).toString()
+				( file ) => fs.readFileSync( file ).toString()
 			).join( '' );
 
 			QUnit.test( `Valid ${ ext } fixtures contain no disables`, ( assert ) => {
