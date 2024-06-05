@@ -9,3 +9,11 @@ div {
 @import (less) foo.css;
 @import 'bar.less';
 @import (inline) baz.css;
+
+/* Check customSyntax is working */
+p {
+	div {
+		// Nested rule, inline comment
+		background: #fff;
+	}
+}
