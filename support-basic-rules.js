@@ -7,7 +7,12 @@ const overrides = utils.getBasicOverrides();
 const noUnsupportedBrowserFeatures = [ true, {
 	"browsers": require( 'browserslist-config-wikimedia/basic' ),
 	"severity": "warning",
-	"ignore": [ "css-not-sel-list" ],
+	"ignore": [
+		"css-not-sel-list",
+		// https://github.com/anandthakker/doiuse/issues/174
+		"mdn-text-decoration-shorthand",
+		"text-decoration"
+	],
 	"ignorePartialSupport": true
 } ];
 
