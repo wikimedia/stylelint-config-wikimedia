@@ -1,5 +1,8 @@
 /* Valid: selector-not-notation */
 div:not( .a ),
 div:not( .b ) {
-	/* ... */
+	/* Valid: plugin/no-unsupported-browser-features:mdn-text-decoration-shorthand */
+	text-decoration: none;
+	/* Valid: plugin/no-unsupported-browser-features:text-decoration */
+	text-decoration: underline dotted;
 }
