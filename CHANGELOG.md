@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.17.2 / 2024-06-07
+* Dropped rule: `mdn-text-decoration-shorthand` and `text-decoration` (Ed Sanders)
+
 ## 0.17.1 / 2024-06-05
 
 * Copy _all_ overrides to basic/modern rules (Ed Sanders)
