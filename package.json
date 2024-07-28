@@ -46,7 +46,7 @@
 		"browserslist-config-wikimedia": "0.7.0",
 		"postcss-less": "6.0.0",
 		"postcss-html": "1.6.0",
-		"stylelint": "16.2.0",
+		"stylelint": "16.7.0",
 		"stylelint-config-recommended": "14.0.0",
 		"stylelint-no-unsupported-browser-features": "8.0.1",
 		"@stylistic/stylelint-config": "1.0.1",

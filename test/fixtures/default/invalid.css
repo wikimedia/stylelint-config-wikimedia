@@ -59,12 +59,11 @@ span {
 }
 
 .e {
-	/* stylelint-disable-next-line custom-property-no-missing-var-function */
+	/* stylelint-disable-next-line custom-property-no-missing-var-function, declaration-block-no-duplicate-properties */
 	color: --foo;
 	/* stylelint-disable-next-line @stylistic/declaration-bang-space-after, @stylistic/declaration-bang-space-before, declaration-no-important */
 	color: #fff! important;
 	background: #fff;
-	/* stylelint-disable-next-line declaration-block-no-duplicate-properties */
 	color: #fff;
 	--custom-property: #fff;
 	/* stylelint-disable-next-line declaration-block-no-duplicate-custom-properties */
@@ -271,9 +270,8 @@ a:nth-child( 0n+0 ) {
 
 		2px;
 	/* stylelint-enable @stylistic/value-list-max-empty-lines */
-	/* stylelint-disable-next-line @stylistic/value-list-comma-space-after, @stylistic/value-list-comma-space-before */
+	/* stylelint-disable-next-line @stylistic/value-list-comma-space-after, @stylistic/value-list-comma-space-before, declaration-block-no-duplicate-properties */
 	font-family: serif ,sans-serif;
-	/* stylelint-disable-next-line declaration-block-no-duplicate-properties */
 	font-family: serif
 		, sans-serif; /* stylelint-disable-line @stylistic/value-list-comma-newline-after, @stylistic/value-list-comma-newline-before, @stylistic/value-list-comma-space-before */
 }
