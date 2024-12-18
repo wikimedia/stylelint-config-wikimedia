@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.18.0 / 2024-12-18
+* Upgrade stylelint from 16.2.0 to 16.12.0 (Romain Menke & Volker E.)
+
+—
+* build: Update GitHub Actions version to latest compatible (James D. Forrester)
+* build: Upgrade qunit to 2.21.1 and eslint-config-wikimedia to 0.28.2 (James D. Forrester)
+* build: Drop Node.js version 18.x and update to '20.x, 22.x' (Volker E.)
+* build: Re-build package-lock for upstream security fixes (James D. Forrester)
+
 ## 0.17.2 / 2024-06-07
 * Dropped rule: `mdn-text-decoration-shorthand` and `text-decoration` (Ed Sanders)
 
@@ -49,7 +58,7 @@
 
 —
 * Upgrade styelint-no-unsupported-browser-features from 6.0.1 to 6.1.0 (James D. Forrester)
-* Upgrade stylelint from 14.8.1 to 14.9.1 (#192) (James D. Forrester)
+* Upgrade stylelint from 14.8.1 to 14.9.1 (James D. Forrester)
 
 —
 * packaging: Add 'Less' to package keywords (Volker E)
