@@ -39,7 +39,7 @@
 		"rules/"
 	],
 	"devDependencies": {
-		"eslint-config-wikimedia": "0.28.2",
+		"eslint-config-wikimedia": "0.31.0",
 		"qunit": "2.21.1"
 	},
 	"dependencies": {
