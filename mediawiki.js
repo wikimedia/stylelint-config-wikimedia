@@ -13,11 +13,18 @@ module.exports = {
 		{
 			"files": [ "**/*.less" ],
 			"customSyntax": "postcss-less",
+			"plugins": [
+				"./rules/no-darkmode-override.js"
+			],
 			"rules": {
 				// MediaWiki will only support @import in Less files.
 				"at-rule-disallowed-list": null,
 				// Don't allow CSS imports.
-				"wikimedia/no-at-import-css": true
+				"wikimedia/no-at-import-css": true,
+				"wikimedia/no-darkmode-override": [
+					true,
+					{ "severity": "warning" }
+				]
 			}
 		},
 		{
