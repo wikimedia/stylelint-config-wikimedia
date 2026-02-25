@@ -194,8 +194,10 @@ span {
 
 /* stylelint-disable-next-line no-descending-specificity, no-duplicate-selectors */
 .k {
-	/* stylelint-disable-next-line no-invalid-double-slash-comments, property-no-unknown */
+	/* stylelint-disable-next-line no-invalid-double-slash-comments */
 	//color: #fff;
+	/* stylelint-disable-next-line property-no-unknown */
+	unknown: #fff;
 	/* stylelint-disable-next-line @stylistic/no-extra-semicolons */
 	;
 	/* stylelint-disable-next-line no-unknown-animations */
