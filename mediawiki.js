@@ -2,9 +2,9 @@
 
 /* eslint-disable quotes, quote-props */
 module.exports = {
-	"plugins": "./rules/no-at-import-css.js",
+	"plugins": "./rules/no-at-import-css.mjs",
 	"rules": {
-		// MediaWiki will only support import in LESS files
+		// MediaWiki will only support import in Less files.
 		"at-rule-disallowed-list": "import",
 		// See https://www.mediawiki.org/wiki/Manual:Coding_conventions/CSS
 		"selector-class-pattern": "^(ext|mw|oo-ui|cdx|client|skin)-"
@@ -14,9 +14,9 @@ module.exports = {
 			"files": [ "**/*.less" ],
 			"customSyntax": "postcss-less",
 			"rules": {
-				// MediaWiki will only support @import in LESS files
+				// MediaWiki will only support @import in Less files.
 				"at-rule-disallowed-list": null,
-				// Don't allow CSS imports
+				// Don't allow CSS imports.
 				"wikimedia/no-at-import-css": true
 			}
 		},
@@ -24,9 +24,9 @@ module.exports = {
 			"files": [ "**/*.vue" ],
 			"customSyntax": "postcss-less",
 			"rules": {
-				// MediaWiki will only support @import in LESS files
+				// MediaWiki will only support @import in Less files.
 				"at-rule-disallowed-list": null,
-				// Don't allow CSS imports
+				// Don't allow CSS imports.
 				"wikimedia/no-at-import-css": true
 			}
 		},

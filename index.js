@@ -17,6 +17,9 @@ module.exports = {
 		"@stylistic/max-line-length": null,
 		"@stylistic/no-eol-whitespace": true,
 		"@stylistic/no-missing-end-of-source-newline": true,
+		// Conflict with at-rule-descriptor-value-no-unknown, at-rule-prelude-no-invalid,
+		// declaration-property-value-no-unknown, and media-query-no-invalid
+		"string-no-newline": null,
 
 		// Other rules alphabetically
 		"at-rule-empty-line-before": [ "always", {
@@ -46,6 +49,8 @@ module.exports = {
 		"color-named": "never",
 
 		"comment-whitespace-inside": "always",
+		// No clear reason currently.
+		"comment-word-disallowed-list": null,
 
 		"@stylistic/declaration-bang-space-after": "never",
 		"@stylistic/declaration-bang-space-before": "always",
@@ -89,6 +94,10 @@ module.exports = {
 			"ignoreFontFamilyNames": [ "monospace" ]
 		} ],
 		"font-weight-notation": "named-where-possible",
+		// Powerful, but too many `word-wrap: break-word` instances downstream at the moment.
+		"property-no-deprecated": null,
+		// Powerful, but too many `word-wrap: break-word` instances downstream at the moment.
+		"property-no-unknown": null,
 
 		"function-disallowed-list": "rgb",
 		"@stylistic/function-comma-newline-after": "never-multi-line",
@@ -176,9 +185,14 @@ module.exports = {
 			"files": [ "**/*.less" ],
 			"customSyntax": "postcss-less",
 			"rules": {
-				// LESS functions are not supported by this rule
+				// Less functions, e.g. color functions like `lighten()`, are not supported
+				// by this rule.
+				"declaration-property-value-no-unknown": null,
+				// Less functions are not supported by this rule.
 				"function-no-unknown": null,
-				// LESS imports can go anywhere
+				// Less supports additional media features, rule only applies to CSS.
+				"media-feature-name-value-no-unknown": null,
+				// Less imports can go anywhere.
 				"no-invalid-position-at-import-rule": null
 			}
 		},

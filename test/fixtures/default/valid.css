@@ -11,6 +11,11 @@ div {
 	}
 }
 
+/* Off: string-no-newline */
+/* Off: comment-word-disallowed-list */
+/* Off: property-no-deprecated */
+/* Off: property-no-unknown */
+
 .a {
 	/* Valid declaration-block-no-redundant-longhand-properties's ignoreShorthands "inset" option */
 	top: 1px;

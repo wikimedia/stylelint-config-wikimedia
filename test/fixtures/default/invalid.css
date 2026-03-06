@@ -15,7 +15,31 @@ div {
 	background: #000;
 }
 @Media( max-width: 600px ) { /* stylelint-disable-line at-rule-empty-line-before, @stylistic/at-rule-name-case, @stylistic/at-rule-name-space-after */
-	color: #fff;
+	color: #fff; /* stylelint-disable-line no-invalid-position-declaration */
+}
+
+/* stylelint-disable-next-line nesting-selector-no-missing-scoping-root */
+& {
+	/* ... */
+}
+
+@property --foo {
+	/* stylelint-disable-next-line at-rule-descriptor-no-unknown */
+	unknown-descriptor: value;
+	/* stylelint-disable-next-line at-rule-descriptor-value-no-unknown */
+	inherits: invalid;
+	/* stylelint-disable-next-line syntax-string-no-invalid */
+	syntax: '<alpha-value>';
+}
+
+/* stylelint-disable-next-line at-rule-prelude-no-invalid */
+@property not {
+	/* ... */
+}
+
+/* stylelint-disable-next-line at-rule-no-deprecated */
+@viewport {
+	min-width: 640px;
 }
 
 /* stylelint-disable-next-line at-rule-no-unknown */
@@ -47,19 +71,23 @@ span {
 	color: #FFFFFF;
 	/* stylelint-disable-next-line color-named */
 	background: red;
-	/* stylelint-disable-next-line color-no-invalid-hex */
+	/* stylelint-disable-next-line declaration-property-value-no-unknown */
 	outline-color: #f1zz;
+	/* stylelint-disable-next-line declaration-property-value-keyword-no-deprecated */
+	overflow: overlay;
 }
 
 /* stylelint-disable-next-line comment-no-empty, comment-whitespace-inside */
 /**/
 
 :root {
+	/* Disable false positive value for custom properties. */
+	/* stylelint-disable-next-line declaration-property-value-no-unknown */
 	--foo: #fff;
 }
 
 .e {
-	/* stylelint-disable-next-line custom-property-no-missing-var-function, declaration-block-no-duplicate-properties */
+	/* stylelint-disable-next-line custom-property-no-missing-var-function, declaration-property-value-no-unknown,declaration-block-no-duplicate-properties */
 	color: --foo;
 	/* stylelint-disable-next-line @stylistic/declaration-bang-space-after, @stylistic/declaration-bang-space-before, declaration-no-important */
 	color: #fff! important;
@@ -114,22 +142,22 @@ span {
 	font-weight: 400;
 	/* stylelint-disable-next-line function-disallowed-list */
 	color: rgb( 0, 0, 0 );
-	/* stylelint-disable-next-line function-calc-no-unspaced-operator, @stylistic/function-parentheses-space-inside, unit-no-unknown */
+	/* stylelint-disable-next-line function-calc-no-unspaced-operator, @stylistic/function-parentheses-space-inside */
 	top: calc(1pxx+2pxx);
-	/* stylelint-disable-next-line @stylistic/function-comma-newline-after, @stylistic/function-comma-newline-before, @stylistic/function-comma-space-after, @stylistic/function-comma-space-before, @stylistic/function-parentheses-space-inside, @stylistic/function-max-empty-lines, @stylistic/value-list-max-empty-lines, @stylistic/declaration-colon-newline-after */
+	/* stylelint-disable-next-line declaration-property-value-no-unknown, @stylistic/function-comma-newline-after, @stylistic/function-comma-newline-before, @stylistic/function-comma-space-after, @stylistic/function-comma-space-before, @stylistic/function-parentheses-space-inside, @stylistic/function-max-empty-lines, @stylistic/value-list-max-empty-lines, @stylistic/declaration-colon-newline-after */
 	transform: translate(1 ,
 
 	1 ); /* stylelint-disable-line @stylistic/function-parentheses-newline-inside */
-	/* stylelint-disable-next-line function-no-unknown */
+	/* stylelint-disable-next-line declaration-property-value-no-unknown */
 	transform: something( 2 );
 }
 
 .k {
-	/* stylelint-disable-next-line function-linear-gradient-no-nonstandard-direction, function-name-case */
+	/* stylelint-disable-next-line declaration-property-value-no-unknown, function-name-case */
 	background: Linear-gradient( top, #fff, #000 );
 	/* stylelint-disable-next-line function-url-no-scheme-relative, function-url-quotes */
 	background-image: url( '//en.wikipedia.org' );
-	/* stylelint-disable-next-line @stylistic/function-whitespace-after */
+	/* stylelint-disable-next-line declaration-property-value-no-unknown, @stylistic/function-whitespace-after */
 	transform: translate( 1, 1 )scale( 3 );
 	/* stylelint-disable-next-line length-zero-no-unit */
 	top: 0px;
@@ -156,17 +184,22 @@ span {
 	/* ... */
 }
 
+/* stylelint-disable-next-line media-feature-name-value-no-unknown */
+@media ( color: red ) {
+	/* ... */
+}
+
 /* stylelint-disable-next-line @stylistic/media-feature-range-operator-space-after, @stylistic/media-feature-range-operator-space-before */
 @media ( width>=600px ) {
 	/* ... */
 }
 
 @media screen and ( color )
-	, projection and ( color ) { /* stylelint-disable-line @stylistic/media-query-list-comma-newline-after, @stylistic/media-query-list-comma-newline-before, @stylistic/media-query-list-comma-space-before */
+	, projection and ( color ) { /* stylelint-disable-line media-type-no-deprecated, @stylistic/media-query-list-comma-newline-after, @stylistic/media-query-list-comma-newline-before, @stylistic/media-query-list-comma-space-before */
 	/* ... */
 }
 
-/* stylelint-disable-next-line @stylistic/media-query-list-comma-space-after */
+/* stylelint-disable-next-line media-type-no-deprecated, @stylistic/media-query-list-comma-space-after */
 @media screen and ( color ),projection and ( color ) {
 	/* ... */
 }
@@ -194,7 +227,7 @@ span {
 
 /* stylelint-disable-next-line no-descending-specificity, no-duplicate-selectors */
 .k {
-	/* stylelint-disable-next-line no-invalid-double-slash-comments, property-no-unknown */
+	/* stylelint-disable-next-line no-invalid-double-slash-comments */
 	//color: #fff;
 	/* stylelint-disable-next-line @stylistic/no-extra-semicolons */
 	;
@@ -256,7 +289,7 @@ a:nth-child( 0n+0 ) {
 }
 
 .u {
-	/* stylelint-disable-next-line string-no-newline, @stylistic/string-quotes, @stylistic/declaration-colon-newline-after */
+	/* stylelint-disable-next-line declaration-property-value-no-unknown, @stylistic/string-quotes, @stylistic/declaration-colon-newline-after */
 	content: "a
 	b";
 	/* stylelint-disable-next-line time-min-milliseconds */
@@ -277,11 +310,13 @@ a:nth-child( 0n+0 ) {
 }
 
 .v {
-	/* stylelint-disable-next-line annotation-no-unknown */
+	/* stylelint-disable-next-line declaration-property-value-no-unknown, annotation-no-unknown */
 	color: #000 !imprtant;
 }
 
 .last {
 	color: #fff;
+	/* stylelint-disable-next-line @stylistic/no-multiple-whitespaces */
+	margin: 1px  2px;
 	/* stylelint-disable-next-line @stylistic/no-missing-end-of-source-newline */
 }
