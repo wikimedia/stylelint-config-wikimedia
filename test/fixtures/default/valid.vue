@@ -15,4 +15,9 @@
 	@media ( width = 100px ) {
 		/* This comment is here to prevent no-empty-source errors */
 	}
+
+	/* Off: string-no-newline */
+	/* Off: comment-word-disallowed-list */
+	/* Off: property-no-deprecated */
+	/* Off: property-no-unknown */
 </style>

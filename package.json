@@ -1,31 +1,33 @@
 {
 	"name": "stylelint-config-wikimedia",
 	"version": "0.18.0",
-	"description": "Wikimedia shareable config for stylelint",
+	"description": "Wikimedia shareable config for Stylelint",
 	"keywords": [
 		"code",
 		"code style",
 		"css",
 		"less",
 		"linting",
+		"shareable-config",
+		"stylesheets",
 		"stylelint",
 		"stylelint-config",
 		"wikimedia"
 	],
-	"license": "MIT",
+	"homepage": "https://github.com/wikimedia/stylelint-config-wikimedia",
+	"bugs": "https://github.com/wikimedia/stylelint-config-wikimedia/issues",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/wikimedia/stylelint-config-wikimedia.git"
 	},
-	"homepage": "https://github.com/wikimedia/stylelint-config-wikimedia",
-	"bugs": "https://github.com/wikimedia/stylelint-config-wikimedia/issues",
-	"main": "index.js",
-	"scripts": {
-		"test": "qunit && npm run lint",
-		"lint": "npm run lint:eslint && npm run lint:stylelint",
-		"lint:eslint": "eslint --cache --max-warnings 0 .",
-		"lint:stylelint": "stylelint --report-needless-disables --max-warnings 0 test/fixtures/"
+	"license": "MIT",
+	"exports": {
+		".": "./index.js",
+		"./mediawiki": "./mediawiki.js",
+		"./support-basic": "./support-basic-rules.js",
+		"./support-modern": "./support-modern-rules.js"
 	},
+	"main": "index.js",
 	"files": [
 		"CHANGELOG.md",
 		"LICENSE",
@@ -38,21 +40,30 @@
 		"src/utils.js",
 		"rules/"
 	],
+	"scripts": {
+		"lint": "npm run lint:eslint && npm run lint:stylelint",
+		"lint:eslint": "eslint --cache --max-warnings 0 .",
+		"lint:stylelint": "stylelint --report-needless-disables --max-warnings 0 test/fixtures/",
+		"test": "qunit && npm run lint"
+	},
+	"dependencies": {
+		"@stylistic/stylelint-config": "5.0.0",
+		"@stylistic/stylelint-plugin": "5.1.0",
+		"browserslist-config-wikimedia": "0.7.0",
+		"postcss-html": "1.8.1",
+		"postcss-less": "6.0.0",
+		"stylelint": "17.6.0",
+		"stylelint-config-recommended": "18.0.0",
+		"stylelint-no-unsupported-browser-features": "8.1.1"
+	},
 	"devDependencies": {
 		"eslint-config-wikimedia": "0.31.0",
 		"qunit": "2.21.1"
 	},
-	"dependencies": {
-		"@stylistic/stylelint-config": "2.0.0",
-		"@stylistic/stylelint-plugin": "3.1.1",
-		"browserslist-config-wikimedia": "0.7.0",
-		"postcss-html": "1.7.0",
-		"postcss-less": "6.0.0",
-		"stylelint": "16.12.0",
-		"stylelint-config-recommended": "14.0.1",
-		"stylelint-no-unsupported-browser-features": "8.0.2"
-	},
 	"peerDependencies": {
 		"postcss-less": "^6.0.0"
+	},
+	"engines": {
+		"node": ">=20.19.0"
 	}
 }
