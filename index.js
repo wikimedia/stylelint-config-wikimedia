@@ -199,7 +199,16 @@ module.exports = {
 		// Vue support requires special over-rides for a customSyntax; note that these don't inherit
 		{
 			"files": [ "**/*.vue" ],
-			"customSyntax": "postcss-less"
+			"customSyntax": "postcss-less",
+			"rules": {
+				// Less functions, e.g. color functions like `lighten()`, are not supported
+				// by this rule.
+				"declaration-property-value-no-unknown": null,
+				// Less functions are not supported by this rule.
+				"function-no-unknown": null,
+				// Less supports additional media features, rule only applies to CSS.
+				"media-feature-name-value-no-unknown": null
+			}
 		},
 		{
 			"files": [ "**/*.vue" ],
