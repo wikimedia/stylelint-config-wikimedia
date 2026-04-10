@@ -6,5 +6,7 @@
 </script>
 
 <style>
-	/* This comment is here to prevent no-empty-source errors */
+	/* Off: declaration-property-value-no-unknown */
+	/* Off: function-no-unknown */
+	/* Off: media-feature-name-value-no-unknown */
 </style>

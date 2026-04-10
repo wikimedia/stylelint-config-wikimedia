@@ -20,4 +20,7 @@
 	/* Off: comment-word-disallowed-list */
 	/* Off: property-no-deprecated */
 	/* Off: property-no-unknown */
+	/* Off: declaration-property-value-no-unknown */
+	/* Off: function-no-unknown */
+	/* Off: media-feature-name-value-no-unknown */
 </style>
