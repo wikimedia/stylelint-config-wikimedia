@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.19.0 / 2026-04-09
+* Upgrade to Stylelint v17 and latest dependencies (Volker E.)
+
+—
+* build: Upgrade eslint-config-wikimedia to 0.31.0 (James D. Forrester)
+* build: Upgrade qunit from 2.21.1 to 2.25.0 (James D. Forrester)
+* CI: Drop IRC sending, now doesn't work (James D. Forrester)
+* CI: Test in Node 24 too (James D. Forrester)
+
 ## 0.18.0 / 2024-12-18
 * Upgrade stylelint from 16.2.0 to 16.12.0 (Romain Menke & Volker E.)
 
