@@ -196,7 +196,12 @@ module.exports = {
 				"no-invalid-position-at-import-rule": null
 			}
 		},
-		// Vue support requires special over-rides for a customSyntax; note that these don't inherit
+		// Vue support requires special over-rides for a customSyntax.
+		// Note that these don't inherit the rule suppressions from the .less override above.
+		// Stylelint applies overrides sequentially and you can't specify multiple customSyntax
+		// entries in one override, with later entries taking precedence for customSyntax.
+		// postcss-html must be last to be the effective parser for .vue SFC structure
+		// (<template>, <script>, <style> wrappers).
 		{
 			"files": [ "**/*.vue" ],
 			"customSyntax": "postcss-less",
