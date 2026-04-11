@@ -1,8 +1,9 @@
-'use strict';
+import stylelint from 'stylelint';
+import fs from 'fs';
+import path from 'path';
+import { createRequire } from 'module';
 
-const stylelint = require( 'stylelint' );
-const fs = require( 'fs' );
-const path = require( 'path' );
+const require = createRequire( import.meta.url );
 const configs = require( '../package.json' ).files;
 
 QUnit.module( 'package.json', () => {
@@ -12,7 +13,8 @@ QUnit.module( 'package.json', () => {
 			'package.json',
 			'package-lock.json'
 		];
-		fs.readdirSync( path.resolve( __dirname, '../' ) ).forEach( ( file ) => {
+		// eslint-disable-next-line security/detect-non-literal-fs-filename
+		fs.readdirSync( path.resolve( import.meta.dirname, '../' ) ).forEach( ( file ) => {
 			const ext = path.extname( file );
 			if (
 				( ext === '.js' || ext === '.json' ) &&
@@ -26,7 +28,7 @@ QUnit.module( 'package.json', () => {
 
 [ 'default', 'mediawiki', 'basic', 'modern' ].forEach( ( configName ) => {
 	QUnit.module( `${ configName } config`, () => {
-		const fixturesDir = path.resolve( __dirname, `fixtures/${ configName }` );
+		const fixturesDir = path.resolve( import.meta.dirname, `fixtures/${ configName }` );
 		// eslint-disable-next-line security/detect-non-literal-fs-filename
 		const fixturesFiles = fs.readdirSync( fixturesDir )
 			.map( ( file ) => path.resolve( fixturesDir, file ) );
