@@ -16,6 +16,8 @@
 		/* This comment is here to prevent no-empty-source errors */
 	}
 
+	/* Off: at-rule-descriptor-no-unknown */
+	/* Off: at-rule-prelude-no-invalid */
 	/* Off: string-no-newline */
 	/* Off: comment-word-disallowed-list */
 	/* Off: property-no-deprecated */
