@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.19.1 / 2026-04-11
+* Fix exports to correct entry points for support-basic and support-modern (Volker E.)
+* rules: Apply Less overrides to Vue files as well (Volker E.)
+
+—
+* docs: Explain double Vue files customSyntax definition in config (Volker E.)
+
 ## 0.19.0 / 2026-04-09
 * Upgrade to Stylelint v17 and latest dependencies (Volker E.)
 
