@@ -24,8 +24,8 @@
 	"exports": {
 		".": "./index.js",
 		"./mediawiki": "./mediawiki.js",
-		"./support-basic": "./support-basic-rules.js",
-		"./support-modern": "./support-modern-rules.js"
+		"./support-basic": "./support-basic.json",
+		"./support-modern": "./support-modern.json"
 	},
 	"main": "index.js",
 	"files": [
