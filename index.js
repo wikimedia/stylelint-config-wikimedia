@@ -185,6 +185,12 @@ module.exports = {
 			"files": [ "**/*.less" ],
 			"customSyntax": "postcss-less",
 			"rules": {
+				// Less property interpolation (e.g. `@{varname}: value`) inside CSS at-rules
+				// that accept descriptors (e.g. `@font-face`) is parsed by postcss-less as a
+				// standard declaration, causing false positives.
+				"at-rule-descriptor-no-unknown": null,
+				// Less imports with `@import ( reference )` are valid, but not in CSS.
+				"at-rule-prelude-no-invalid": null,
 				// Less functions, e.g. color functions like `lighten()`, are not supported
 				// by this rule.
 				"declaration-property-value-no-unknown": null,
@@ -206,6 +212,12 @@ module.exports = {
 			"files": [ "**/*.vue" ],
 			"customSyntax": "postcss-less",
 			"rules": {
+				// Less property interpolation (e.g. `@{varname}: value`) inside CSS at-rules
+				// that accept descriptors (e.g. `@font-face`) is parsed by postcss-less as a
+				// standard declaration, causing false positives.
+				"at-rule-descriptor-no-unknown": null,
+				// Less imports with `@import ( reference )` are valid, but not in CSS.
+				"at-rule-prelude-no-invalid": null,
 				// Less functions, e.g. color functions like `lighten()`, are not supported
 				// by this rule.
 				"declaration-property-value-no-unknown": null,

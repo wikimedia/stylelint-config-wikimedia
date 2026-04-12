@@ -6,6 +6,8 @@
 </script>
 
 <style>
+	/* Off: at-rule-descriptor-no-unknown */
+	/* Off: at-rule-prelude-no-invalid */
 	/* Off: declaration-property-value-no-unknown */
 	/* Off: function-no-unknown */
 	/* Off: media-feature-name-value-no-unknown */
