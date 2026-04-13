@@ -17,3 +17,12 @@ p {
 		background: #fff;
 	}
 }
+
+/* Definition of darkmode mixin is allowed, just usage is disallowed. */
+.darkmode-override( @rules ) {
+	@media screen {
+		html.skin-theme-clientpref-night & {
+			@rules();
+		}
+	}
+}
