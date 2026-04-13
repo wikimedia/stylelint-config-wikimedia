@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.19.2 / 2026-04-13
+* New custom rule: Warn against use of darkmode-custom-fix mixin (Ed Sanders)
+
+—
+* rules: Exclude 2 `at-rule-*` rules for Less files (Volker E.)
+
+—
+* test: Move to ESM (Volker E.)
+
 ## 0.19.1 / 2026-04-11
 * Fix exports to correct entry points for support-basic and support-modern (Volker E.)
 * rules: Apply Less overrides to Vue files as well (Volker E.)
