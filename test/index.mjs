@@ -13,7 +13,8 @@ QUnit.module( 'package.json', () => {
 			'package.json',
 			'package-lock.json'
 		];
-		// eslint-disable-next-line security/detect-non-literal-fs-filename
+
+		// eslint-disable-next-line n/no-unsupported-features/node-builtins
 		fs.readdirSync( path.resolve( import.meta.dirname, '../' ) ).forEach( ( file ) => {
 			const ext = path.extname( file );
 			if (
@@ -28,6 +29,7 @@ QUnit.module( 'package.json', () => {
 
 [ 'default', 'mediawiki', 'basic', 'modern' ].forEach( ( configName ) => {
 	QUnit.module( `${ configName } config`, () => {
+		// eslint-disable-next-line n/no-unsupported-features/node-builtins
 		const fixturesDir = path.resolve( import.meta.dirname, `fixtures/${ configName }` );
 		// eslint-disable-next-line security/detect-non-literal-fs-filename
 		const fixturesFiles = fs.readdirSync( fixturesDir )
