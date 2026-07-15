@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.19.3 / 2026-07-16
+* Bump transitive dependency npm audit risk from postcss-selector-parser 3.1.1 (James D. Forrester)
+* build: Upgrade eslint-config-wikimedia from 0.31.0 to 0.32.4 (James D. Forrester)
+* build: Upgrade qunit from 2.25.0 to 2.26.0 (James D. Forrester)
+
 ## 0.19.2 / 2026-04-13
 * New custom rule: Warn against use of darkmode-custom-fix mixin (Ed Sanders)
 
