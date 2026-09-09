@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.19.4 / 2026-09-09
+* build: Upgrade eslint-config-wikimedia to 0.32.6 (James D. Forrester)
+* build: Bump npm audit findings for browserslist, fast-uri, etc. (James D. Forrester)
+* Upgrade browserslist-config-wikimedia from 0.7.0 to 0.9.0 (James D. Forrester)
+
 ## 0.19.3 / 2026-07-16
 * Bump transitive dependency npm audit risk from postcss-selector-parser 3.1.1 (James D. Forrester)
 * build: Upgrade eslint-config-wikimedia from 0.31.0 to 0.32.4 (James D. Forrester)
