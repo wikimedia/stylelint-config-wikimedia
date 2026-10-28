@@ -7,7 +7,7 @@ module.exports = {
 		// MediaWiki will only support import in Less files.
 		"at-rule-disallowed-list": "import",
 		// See https://www.mediawiki.org/wiki/Manual:Coding_conventions/CSS
-		"selector-class-pattern": "^(ext|mw|oo-ui|cdx|client|skin)-"
+		"selector-class-pattern": "^(ext|mw|oo-ui|cdx|client|skin|test-kitchen-experiment)-"
 	},
 	"overrides": [
 		{

@@ -4,6 +4,7 @@
 .oo-ui-buttonElement,
 .cdx-widget,
 .client-js,
-.skin-vector {
+.skin-vector,
+.test-kitchen-experiment-experimentname-groupname {
 	width: 1px;
 }
