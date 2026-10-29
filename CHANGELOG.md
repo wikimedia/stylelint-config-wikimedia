@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.20.0 / 2026-10-30
+* [BREAKING CHANGE] New rule: `wikimedia/selector-class-prefix` (Ed Sanders)
+
+—
+* Raise postcsss-less from 6.0.0 to 7.0.1 (James D. Forrester)
+
+—
+* build: Upgrade qunit from 2.26.0 to 3.0.0 (James D. Forrester)
+
 ## 0.19.4 / 2026-09-09
 * build: Upgrade eslint-config-wikimedia to 0.32.6 (James D. Forrester)
 * build: Bump npm audit findings for browserslist, fast-uri, etc. (James D. Forrester)
