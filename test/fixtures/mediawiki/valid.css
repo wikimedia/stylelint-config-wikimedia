@@ -1,4 +1,5 @@
-/* Valid: selector-class-pattern */
+/* Valid: wikimedia/selector-class-prefix */
+/* Off: selector-class-pattern */
 .ext-foo-name,
 .mw-bar-thing,
 .oo-ui-buttonElement,

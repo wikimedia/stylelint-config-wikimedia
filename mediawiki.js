@@ -2,12 +2,18 @@
 
 /* eslint-disable quotes, quote-props */
 module.exports = {
-	"plugins": "./rules/no-at-import-css.mjs",
+	"plugins": [
+		"./rules/no-at-import-css.mjs",
+		"./rules/selector-class-prefix.js"
+	],
 	"rules": {
 		// MediaWiki will only support import in Less files.
 		"at-rule-disallowed-list": "import",
 		// See https://www.mediawiki.org/wiki/Manual:Coding_conventions/CSS
-		"selector-class-pattern": "^(ext|mw|oo-ui|cdx|client|skin)-"
+		// Use wikimedia/selector-class-prefix instead, which can be extended
+		// with additionalPrefixes.
+		"selector-class-pattern": null,
+		"wikimedia/selector-class-prefix": true
 	},
 	"overrides": [
 		{
