@@ -7,5 +7,6 @@
 
 <style>
 	/* Off: at-rule-disallowed-list */
+	/* Off: selector-class-pattern */
 	@import 'lookMaICanImportHere.less';
 </style>

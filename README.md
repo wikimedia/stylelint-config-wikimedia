@@ -69,6 +69,20 @@ Add a `"rules"` object to your config file, and add your overrides or additional
 }
 ```
 
+### Class name prefixes
+The `mediawiki` config requires class selectors to start with a known prefix (e.g. `ext-`, `mw-`, `oo-ui-`, `cdx-`), using the `wikimedia/selector-class-prefix` rule. To allow extra prefixes on top of these, use the `additionalPrefixes` option:
+```json
+{
+	"extends": [
+		"stylelint-config-wikimedia",
+		"stylelint-config-wikimedia/mediawiki"
+	],
+	"rules": {
+		"wikimedia/selector-class-prefix": [ true, { "additionalPrefixes": [ "ve" ] } ]
+	}
+}
+```
+
 
 ## Changelog
 You can read the [changelog](CHANGELOG.md) for release versions.
