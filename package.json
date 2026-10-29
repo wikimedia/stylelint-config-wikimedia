@@ -51,7 +51,7 @@
 		"@stylistic/stylelint-plugin": "5.1.0",
 		"browserslist-config-wikimedia": "0.9.0",
 		"postcss-html": "1.8.1",
-		"postcss-less": "6.0.0",
+		"postcss-less": "7.0.1",
 		"stylelint": "17.6.0",
 		"stylelint-config-recommended": "18.0.0",
 		"stylelint-no-unsupported-browser-features": "8.1.1"
