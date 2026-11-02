@@ -10,3 +10,9 @@
 .not-mw-prefixed {
 	width: 1px;
 }
+
+/* Prefix without a hyphen */
+/* stylelint-disable-next-line wikimedia/selector-class-prefix */
+.veNoHyphen {
+	width: 1px;
+}

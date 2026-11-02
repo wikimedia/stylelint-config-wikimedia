@@ -3,7 +3,9 @@
  *
  * Wraps the core `selector-class-pattern` rule with a pattern built from
  * the core MediaWiki prefixes plus any `additionalPrefixes` given, so
- * downstream configs can extend the list without restating it.
+ * downstream configs can extend the list without restating it. Class names
+ * which match any of the regular expressions in `additionalPatterns` are
+ * also allowed.
  *
  * See https://www.mediawiki.org/wiki/Manual:Coding_conventions/CSS
  */
@@ -19,7 +21,8 @@ const ruleName = 'wikimedia/selector-class-prefix';
 const corePrefixes = [ 'ext', 'mw', 'oo-ui', 'cdx', 'client', 'skin' ];
 
 const messages = ruleMessages( ruleName, {
-	expected: ( selector, prefixes ) => `Expected "${ selector }" to start with one of: ${ prefixes.map( ( prefix ) => prefix + '-' ).join( ', ' ) }`
+	expected: ( selector, prefixes, patterns ) => `Expected "${ selector }" to start with one of: ${ prefixes.map( ( prefix ) => prefix + '-' ).join( ', ' ) }` +
+		( patterns.length ? ` or match one of: ${ patterns.map( ( p ) => `/${ p }/` ).join( ', ' ) }` : '' )
 } );
 
 function escapeRegExp( str ) {
@@ -43,7 +46,8 @@ module.exports = stylelint.createPlugin(
 			{
 				actual: secondaryOptions,
 				possible: {
-					additionalPrefixes: [ isString ]
+					additionalPrefixes: [ isString ],
+					additionalPatterns: [ isString ]
 				},
 				optional: true
 			}
@@ -55,7 +59,10 @@ module.exports = stylelint.createPlugin(
 		const prefixes = corePrefixes.concat(
 			( secondaryOptions && secondaryOptions.additionalPrefixes ) || []
 		);
-		const pattern = `^(${ prefixes.map( escapeRegExp ).join( '|' ) })-`;
+		const patterns = ( secondaryOptions && secondaryOptions.additionalPatterns ) || [];
+		const pattern = [ `^(${ prefixes.map( escapeRegExp ).join( '|' ) })-` ]
+			.concat( patterns.map( ( p ) => `(?:${ p })` ) )
+			.join( '|' );
 
 		await checkAgainstRule(
 			{
@@ -75,7 +82,7 @@ module.exports = stylelint.createPlugin(
 				const match = warning.text.match( /^Expected "(.+?)" to match pattern/ );
 				report( {
 					message: messages.expected,
-					messageArgs: [ match ? match[ 1 ] : warning.text, prefixes ],
+					messageArgs: [ match ? match[ 1 ] : warning.text, prefixes, patterns ],
 					node: warning.node,
 					start: { line: warning.line, column: warning.column },
 					end: { line: warning.endLine, column: warning.endColumn },
