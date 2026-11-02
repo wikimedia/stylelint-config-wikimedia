@@ -70,7 +70,7 @@ Add a `"rules"` object to your config file, and add your overrides or additional
 ```
 
 ### Class name prefixes
-The `mediawiki` config requires class selectors to start with a known prefix (e.g. `ext-`, `mw-`, `oo-ui-`, `cdx-`), using the `wikimedia/selector-class-prefix` rule. To allow extra prefixes on top of these, use the `additionalPrefixes` option:
+The `mediawiki` config requires class selectors to start with a known prefix (e.g. `ext-`, `mw-`, `oo-ui-`, `cdx-`), using the `wikimedia/selector-class-prefix` rule. To allow extra prefixes on top of these, use the `additionalPrefixes` option. To allow class names which don't follow the prefix convention, use the `additionalPatterns` option, which takes a list of regular expressions:
 ```json
 {
 	"extends": [
@@ -78,7 +78,10 @@ The `mediawiki` config requires class selectors to start with a known prefix (e.
 		"stylelint-config-wikimedia/mediawiki"
 	],
 	"rules": {
-		"wikimedia/selector-class-prefix": [ true, { "additionalPrefixes": [ "ve" ] } ]
+		"wikimedia/selector-class-prefix": [ true, {
+			"additionalPrefixes": [ "ve" ],
+			"additionalPatterns": [ "^client-(no)js$" ]
+		} ]
 	}
 }
 ```

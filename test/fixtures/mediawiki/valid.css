@@ -5,6 +5,10 @@
 .oo-ui-buttonElement,
 .cdx-widget,
 .client-js,
-.skin-vector {
+.skin-vector,
+/* additionalPrefixes */
+.ve-ui-surface,
+/* additionalPatterns */
+.client-nojs {
 	width: 1px;
 }
