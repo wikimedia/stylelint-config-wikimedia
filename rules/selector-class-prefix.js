@@ -3,9 +3,11 @@
  *
  * Wraps the core `selector-class-pattern` rule with a pattern built from
  * the core MediaWiki prefixes plus any `additionalPrefixes` given, so
- * downstream configs can extend the list without restating it. Class names
- * which match any of the regular expressions in `additionalPatterns` are
- * also allowed.
+ * downstream configs can extend the list without restating it. Core prefixes
+ * listed in `removePrefixes` are not allowed. For example, an extension can
+ * remove `ext` and add `ext-<extensionName>`, so that it only uses its own prefix.
+ * Class names which match any of the regular expressions in
+ * `additionalPatterns` are also allowed.
  *
  * See https://www.mediawiki.org/wiki/Manual:Coding_conventions/CSS
  */
@@ -47,7 +49,8 @@ module.exports = stylelint.createPlugin(
 				actual: secondaryOptions,
 				possible: {
 					additionalPrefixes: [ isString ],
-					additionalPatterns: [ isString ]
+					additionalPatterns: [ isString ],
+					removePrefixes: [ isString ]
 				},
 				optional: true
 			}
@@ -56,9 +59,10 @@ module.exports = stylelint.createPlugin(
 			return;
 		}
 
-		const prefixes = corePrefixes.concat(
-			( secondaryOptions && secondaryOptions.additionalPrefixes ) || []
-		);
+		const removePrefixes = ( secondaryOptions && secondaryOptions.removePrefixes ) || [];
+		const prefixes = corePrefixes
+			.filter( ( prefix ) => !removePrefixes.includes( prefix ) )
+			.concat( ( secondaryOptions && secondaryOptions.additionalPrefixes ) || [] );
 		const patterns = ( secondaryOptions && secondaryOptions.additionalPatterns ) || [];
 		const pattern = [ `^(${ prefixes.map( escapeRegExp ).join( '|' ) })-` ]
 			.concat( patterns.map( ( p ) => `(?:${ p })` ) )

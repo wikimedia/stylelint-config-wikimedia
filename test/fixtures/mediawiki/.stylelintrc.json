@@ -2,7 +2,8 @@
 	"extends": "../../../mediawiki",
 	"rules": {
 		"wikimedia/selector-class-prefix": [ true, {
-			"additionalPrefixes": [ "ve" ],
+			"removePrefixes": [ "ext" ],
+			"additionalPrefixes": [ "ve", "ext-myextension" ],
 			"additionalPatterns": [ "^client-(no)js$" ]
 		} ]
 	}
