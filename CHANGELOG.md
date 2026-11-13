@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.20.1 / 2026-11-13
+* Rule fix: Add `additionalPatterns` to `wikimedia/selector-class-prefix` (Ed Sanders)
+* Rule fix: Add `removePrefixes` to `wikimedia/selector-class-prefix` (Ed Sanders)
+
 ## 0.20.0 / 2026-10-30
 * [BREAKING CHANGE] New rule: `wikimedia/selector-class-prefix` (Ed Sanders)
 
