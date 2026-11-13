@@ -70,7 +70,7 @@ Add a `"rules"` object to your config file, and add your overrides or additional
 ```
 
 ### Class name prefixes
-The `mediawiki` config requires class selectors to start with a known prefix (e.g. `ext-`, `mw-`, `oo-ui-`, `cdx-`), using the `wikimedia/selector-class-prefix` rule. To allow extra prefixes on top of these, use the `additionalPrefixes` option. To allow class names which don't follow the prefix convention, use the `additionalPatterns` option, which takes a list of regular expressions:
+The `mediawiki` config requires class selectors to start with a known prefix (e.g. `ext-`, `mw-`, `oo-ui-`, `cdx-`), using the `wikimedia/selector-class-prefix` rule. To allow extra prefixes on top of these, use the `additionalPrefixes` option. To disallow one of the core prefixes, use the `removePrefixes` option. For example, an extension can remove the generic `ext` prefix and add its own `ext-<extensionName>` prefix. To allow class names which don't follow the prefix convention, use the `additionalPatterns` option, which takes a list of regular expressions:
 ```json
 {
 	"extends": [
@@ -79,7 +79,8 @@ The `mediawiki` config requires class selectors to start with a known prefix (e.
 	],
 	"rules": {
 		"wikimedia/selector-class-prefix": [ true, {
-			"additionalPrefixes": [ "ve" ],
+			"removePrefixes": [ "ext" ],
+			"additionalPrefixes": [ "ve", "ext-myextension" ],
 			"additionalPatterns": [ "^client-(no)js$" ]
 		} ]
 	}

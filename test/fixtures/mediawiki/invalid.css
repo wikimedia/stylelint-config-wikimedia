@@ -16,3 +16,9 @@
 .veNoHyphen {
 	width: 1px;
 }
+
+/* Prefix removed by removePrefixes */
+/* stylelint-disable-next-line wikimedia/selector-class-prefix */
+.ext-foo-name {
+	width: 1px;
+}
